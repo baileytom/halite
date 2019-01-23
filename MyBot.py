@@ -59,16 +59,8 @@ try:
 except:
     torch.save(policy_net.state_dict(), model_path)
     
-batch_size = 5
-learning_rate = 0.01
-gamma = 0.99
-optimizer = torch.optim.RMSprop(policy_net.parameters(), lr=learning_rate)
-state_pool = []
-action_pool = []
-reward_pool = []
-steps = 0
-
 # Set up variables
+f = open("data/batch_data", "a")
 last_halite = 0
 last_action = None
 last_state = None
@@ -88,8 +80,7 @@ while True:
         # Record data from last turn
         last_reward = me.halite_amount - last_halite
         if last_action:
-            f = open("data/batch_data", "a")
-            f.write("{},{},{},{}\n".format(
+            f.write("{}|{}|{}|{}|\n".format(
                 t,
                 last_reward,
                 last_action,
