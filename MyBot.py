@@ -14,6 +14,15 @@ import random
 import numpy as np
 from itertools import count
 
+"""
+
+This script loads in the model and collects training data.
+
+"""
+
+
+model_path = 'model/state'
+
 # Utilities
 def cell_data(cell):
     return [cell.halite_amount, cell.is_occupied, cell.has_structure]
@@ -41,22 +50,33 @@ class PolicyNet(nn.Module):
         x = torch.sigmoid(x)
         return x
 
-# Game loop
-game = hlt.Game()
-game.ready("MyPythonBot")
-
 # Set up policy
 policy_net = PolicyNet()
 
+# Load existing / save new model
+try:
+    policy_net.load_state_dict(torch.load(model_path))
+except:
+    torch.save(policy_net.state_dict(), model_path)
+    
 batch_size = 5
 learning_rate = 0.01
 gamma = 0.99
 optimizer = torch.optim.RMSprop(policy_net.parameters(), lr=learning_rate)
-
 state_pool = []
 action_pool = []
 reward_pool = []
 steps = 0
+
+# Set up variables
+last_halite = 0
+last_action = None
+last_state = None
+t = 0
+
+# Game loop
+game = hlt.Game()
+game.ready("MyPythonBot")
 
 while True:
     game.update_frame()
@@ -65,14 +85,26 @@ while True:
     commands = []
 
     for ship in me.get_ships():
-        vision = get_vision(ship, 1)
+        # Record data from last turn
+        last_reward = me.halite_amount - last_halite
+        if last_action:
+            f = open("data/batch_data", "a")
+            f.write("{},{},{},{}\n".format(
+                t,
+                last_reward,
+                last_action,
+                last_state
+            ))
 
+        # Forward pass NN for this turns action
+        vision = get_vision(ship, 1)
         state = torch.FloatTensor(vision)
         state = Variable(state)
         probs = policy_net(state)
         m = Categorical(probs)
         sample = int(m.sample())
 
+        # Do action
         possible_actions = [
             ship.move(Direction.North),
             ship.move(Direction.South),
@@ -81,9 +113,13 @@ while True:
             ship.move(Direction.Still)
         ]
         action = possible_actions[sample]
-        
         commands.append(action)
 
+        last_state = state
+        last_action = action
+        last_halite = me.halite_amount
+        t += 1
+        
     if len(me.get_ships()) == 0:
         commands.append(me.shipyard.spawn())
         
