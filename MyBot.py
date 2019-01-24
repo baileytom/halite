@@ -61,14 +61,14 @@ class PolicyNet(nn.Module):
         x = F.relu(self.l1(x))
         action_scores = self.action_head(x)
         state_values = self.value_head(x)
-        return F.softmax(action_scores, dim=-1), state_values
+        return F.softmax(action_scores, dim=-1)
 
 # Policy utilities
 
 def select_action(state):
     state = torch.FloatTensor(state)
     state = Variable(state)
-    probs, state_value = policy_net(state)
+    probs = policy_net(state)
     m = Categorical(probs)
     action_sample = m.sample()
     action = [
@@ -79,7 +79,10 @@ def select_action(state):
             ship.move(Direction.Still),
             ship.move(navigate_dir(ship, shipyard))
         ][int(action_sample)]
-    return action, m.log_prob(action_sample), state_value
+
+    logging.info(m.log_prob(action_sample))
+    
+    return action, action_sample
 
 policy_net = PolicyNet()
 
@@ -91,7 +94,7 @@ except:
     
 # Set up variables
 last_halite = 0
-last_action_prob = None
+last_action_sample = None
 last_state = None
 t = 0
 
@@ -110,14 +113,13 @@ while True:
         # Record data from last turn
         last_reward = me.halite_amount - last_halite
         if last_state:
-            #out_state = np.array2string(np.asarray(last_state)).replace('\n', ''
             with open(data_path, "a") as f:
                 # For turn t-1
-                #   time, reward, log prob action, state values
+                # time, reward, action_sample, state
                 f.write("{}|{}|{}|{}\n".format(
                     t,
                     last_reward,
-                    last_action_prob,
+                    last_action_sample,
                     last_state
                 ))
                 logging.info("wrote")
@@ -125,14 +127,14 @@ while True:
         # Forward pass NN for this turns action, collect data
         vision = get_vision(ship, 1)
         state = vision + [ship.halite_amount]
-        action, action_prob, state_value = select_action(state) 
+        action, action_sample = select_action(state) 
 
         # Add action to commands
         commands.append(action)
 
         # Save data to store with next turn's reward diff
-        last_state = state_value
-        last_action_prob = action_prob
+        last_state = state
+        last_action_sample = action_sample
         last_halite = me.halite_amount
         t += 1
         

@@ -1,398 +1,398 @@
-1|0|-1.1920930376163597e-07|tensor([-21.8292], grad_fn=<AddBackward0>)
-2|0|-1.1920930376163597e-07|tensor([-24.6153], grad_fn=<AddBackward0>)
-3|0|-1.1920930376163597e-07|tensor([-24.6373], grad_fn=<AddBackward0>)
-4|0|-1.1920930376163597e-07|tensor([-10.7488], grad_fn=<AddBackward0>)
-5|0|-1.1920930376163597e-07|tensor([-7.1253], grad_fn=<AddBackward0>)
-6|0|-1.1920930376163597e-07|tensor([-3.3069], grad_fn=<AddBackward0>)
-7|0|-2.3841860752327193e-07|tensor([-10.7550], grad_fn=<AddBackward0>)
-8|0|-1.1920930376163597e-07|tensor([-7.9445], grad_fn=<AddBackward0>)
-9|0|-1.1920930376163597e-07|tensor([-7.5956], grad_fn=<AddBackward0>)
-10|0|-0.0012656707549467683|tensor([0.6786], grad_fn=<AddBackward0>)
-11|0|-0.017962846904993057|tensor([-2.1426], grad_fn=<AddBackward0>)
-12|0|-0.057670462876558304|tensor([-11.0333], grad_fn=<AddBackward0>)
-13|0|-0.009436948224902153|tensor([-1.6281], grad_fn=<AddBackward0>)
-14|0|-0.017194809392094612|tensor([-4.3359], grad_fn=<AddBackward0>)
-15|0|-0.013506557792425156|tensor([-4.8958], grad_fn=<AddBackward0>)
-16|0|-0.03211940824985504|tensor([-4.8841], grad_fn=<AddBackward0>)
-17|0|-1.3972017765045166|tensor([-5.9671], grad_fn=<AddBackward0>)
-18|0|-1.1920930376163597e-07|tensor([-2.1619], grad_fn=<AddBackward0>)
-19|0|-0.026666613295674324|tensor([-4.8398], grad_fn=<AddBackward0>)
-20|0|-0.0005612756358459592|tensor([2.5118], grad_fn=<AddBackward0>)
-21|0|-0.008224419318139553|tensor([1.8620], grad_fn=<AddBackward0>)
-22|0|-0.06205994263291359|tensor([-4.3059], grad_fn=<AddBackward0>)
-23|0|-0.0007161677931435406|tensor([1.4221], grad_fn=<AddBackward0>)
-24|0|-0.13773994147777557|tensor([-5.2100], grad_fn=<AddBackward0>)
-25|0|-5.394365871325135e-05|tensor([0.9485], grad_fn=<AddBackward0>)
-26|0|-0.00036031537456437945|tensor([0.4529], grad_fn=<AddBackward0>)
-27|0|-1.4863510131835938|tensor([-4.4798], grad_fn=<AddBackward0>)
-28|0|-1.1920930376163597e-07|tensor([-3.1979], grad_fn=<AddBackward0>)
-29|0|-0.3830176889896393|tensor([-5.3978], grad_fn=<AddBackward0>)
-30|0|-0.2812562584877014|tensor([-4.2114], grad_fn=<AddBackward0>)
-31|0|-1.2517053619376384e-05|tensor([0.8290], grad_fn=<AddBackward0>)
-32|0|-0.34570279717445374|tensor([-4.8484], grad_fn=<AddBackward0>)
-33|0|-2.861027041944908e-06|tensor([0.8409], grad_fn=<AddBackward0>)
-34|0|-0.2754873037338257|tensor([-5.3173], grad_fn=<AddBackward0>)
-35|0|-0.27024346590042114|tensor([-4.5959], grad_fn=<AddBackward0>)
-36|0|-1.3709077393286861e-06|tensor([1.2805], grad_fn=<AddBackward0>)
-37|0|-1.3534197807312012|tensor([-4.8763], grad_fn=<AddBackward0>)
-38|0|-1.1920930376163597e-07|tensor([-3.0143], grad_fn=<AddBackward0>)
-39|0|-1.1920930376163597e-07|tensor([-1.2306], grad_fn=<AddBackward0>)
-40|0|-0.13304948806762695|tensor([-3.9414], grad_fn=<AddBackward0>)
-41|0|-1.1920930376163597e-07|tensor([-2.0393], grad_fn=<AddBackward0>)
-42|0|-0.08700082451105118|tensor([-4.0299], grad_fn=<AddBackward0>)
-43|0|-1.1920930376163597e-07|tensor([-2.8554], grad_fn=<AddBackward0>)
-44|0|-1.1920930376163597e-07|tensor([-1.7644], grad_fn=<AddBackward0>)
-45|0|-0.01120473351329565|tensor([-3.6222], grad_fn=<AddBackward0>)
-46|0|-1.1920930376163597e-07|tensor([-2.4095], grad_fn=<AddBackward0>)
-47|0|-0.006793035194277763|tensor([-3.5363], grad_fn=<AddBackward0>)
-48|0|-1.1920930376163597e-07|tensor([-3.0546], grad_fn=<AddBackward0>)
-49|0|-1.1920930376163597e-07|tensor([-2.2468], grad_fn=<AddBackward0>)
-50|0|-0.0015011365758255124|tensor([-3.3645], grad_fn=<AddBackward0>)
-51|0|-1.1920930376163597e-07|tensor([-2.7958], grad_fn=<AddBackward0>)
-52|0|-0.0009480438893660903|tensor([-3.2589], grad_fn=<AddBackward0>)
-53|0|-0.0017314633587375283|tensor([-3.6459], grad_fn=<AddBackward0>)
-54|0|-1.1920930376163597e-07|tensor([-1.9477], grad_fn=<AddBackward0>)
-55|0|-0.0012454394018277526|tensor([-3.5797], grad_fn=<AddBackward0>)
-56|0|-1.1920930376163597e-07|tensor([-2.4438], grad_fn=<AddBackward0>)
-57|0|-0.0010516807669773698|tensor([-3.5247], grad_fn=<AddBackward0>)
-58|0|-1.1920930376163597e-07|tensor([-2.8905], grad_fn=<AddBackward0>)
-59|0|-1.1920930376163597e-07|tensor([-2.1606], grad_fn=<AddBackward0>)
-60|0|-0.0003687226853799075|tensor([-3.4230], grad_fn=<AddBackward0>)
-61|0|-1.1920930376163597e-07|tensor([-2.7124], grad_fn=<AddBackward0>)
-62|0|-0.000294371071504429|tensor([-3.3803], grad_fn=<AddBackward0>)
-63|0|-0.00047313436516560614|tensor([-3.8222], grad_fn=<AddBackward0>)
-64|0|-1.1920930376163597e-07|tensor([-1.8929], grad_fn=<AddBackward0>)
-65|0|-0.0003710481396410614|tensor([-3.6716], grad_fn=<AddBackward0>)
-66|0|-1.1920930376163597e-07|tensor([-2.3970], grad_fn=<AddBackward0>)
-67|0|-0.0003126156225334853|tensor([-3.6656], grad_fn=<AddBackward0>)
-68|0|-0.00043264447594992816|tensor([-3.9648], grad_fn=<AddBackward0>)
-69|0|-1.1920930376163597e-07|tensor([-1.8800], grad_fn=<AddBackward0>)
-70|0|-0.00035304101766087115|tensor([-3.8520], grad_fn=<AddBackward0>)
-71|0|-1.1920930376163597e-07|tensor([-2.3127], grad_fn=<AddBackward0>)
-72|0|-1.1920930376163597e-07|tensor([-1.6317], grad_fn=<AddBackward0>)
-73|0|-0.00017722031043376774|tensor([-4.0221], grad_fn=<AddBackward0>)
-74|0|-1.1920930376163597e-07|tensor([-2.0184], grad_fn=<AddBackward0>)
-75|0|-0.0001489630958531052|tensor([-3.9016], grad_fn=<AddBackward0>)
-76|0|-1.1920930376163597e-07|tensor([-2.4178], grad_fn=<AddBackward0>)
-77|0|-1.1920930376163597e-07|tensor([-1.9464], grad_fn=<AddBackward0>)
-78|0|-8.279427856905386e-05|tensor([-4.0113], grad_fn=<AddBackward0>)
-79|0|-1.1920930376163597e-07|tensor([-2.2715], grad_fn=<AddBackward0>)
-80|0|-7.188578456407413e-05|tensor([-3.8949], grad_fn=<AddBackward0>)
-81|0|-8.953018550528213e-05|tensor([-4.2327], grad_fn=<AddBackward0>)
-82|0|-1.1920930376163597e-07|tensor([-1.8625], grad_fn=<AddBackward0>)
-83|0|-8.130403875838965e-05|tensor([-4.1588], grad_fn=<AddBackward0>)
-84|0|-1.1920930376163597e-07|tensor([-2.1226], grad_fn=<AddBackward0>)
-85|0|-7.39124880055897e-05|tensor([-4.0849], grad_fn=<AddBackward0>)
-86|0|-1.1920930376163597e-07|tensor([-2.3827], grad_fn=<AddBackward0>)
-87|0|-1.1920930376163597e-07|tensor([-2.0361], grad_fn=<AddBackward0>)
-88|0|-4.702917067334056e-05|tensor([-4.1665], grad_fn=<AddBackward0>)
-89|0|-1.1920930376163597e-07|tensor([-2.2312], grad_fn=<AddBackward0>)
-90|0|-4.3214302422711626e-05|tensor([-4.0964], grad_fn=<AddBackward0>)
-91|0|-1.1920930376163597e-07|tensor([-2.4262], grad_fn=<AddBackward0>)
-92|0|-1.1920930376163597e-07|tensor([-2.1374], grad_fn=<AddBackward0>)
-93|0|-2.8312606445979327e-05|tensor([-4.1174], grad_fn=<AddBackward0>)
-94|0|-1.1920930376163597e-07|tensor([-2.3325], grad_fn=<AddBackward0>)
-95|0|-2.5987963454099372e-05|tensor([-4.0472], grad_fn=<AddBackward0>)
-96|0|-3.6299887142376974e-05|tensor([-4.4286], grad_fn=<AddBackward0>)
-97|0|-1.1920930376163597e-07|tensor([-1.9607], grad_fn=<AddBackward0>)
-98|0|-3.308112354716286e-05|tensor([-4.3606], grad_fn=<AddBackward0>)
-99|0|-1.1920930376163597e-07|tensor([-2.0907], grad_fn=<AddBackward0>)
-100|0|-3.0160405003698543e-05|tensor([-4.2926], grad_fn=<AddBackward0>)
-101|0|-1.1920930376163597e-07|tensor([-2.2208], grad_fn=<AddBackward0>)
-102|0|-2.7478119591251016e-05|tensor([-4.2247], grad_fn=<AddBackward0>)
-103|0|-1.1920930376163597e-07|tensor([-2.3508], grad_fn=<AddBackward0>)
-104|0|-1.1920930376163597e-07|tensor([-2.1775], grad_fn=<AddBackward0>)
-105|0|-2.3305687136598863e-05|tensor([-4.2951], grad_fn=<AddBackward0>)
-106|0|-1.1920930376163597e-07|tensor([-2.2426], grad_fn=<AddBackward0>)
-107|0|-2.2232779883779585e-05|tensor([-4.2611], grad_fn=<AddBackward0>)
-108|0|-1.1920930376163597e-07|tensor([-2.3076], grad_fn=<AddBackward0>)
-109|0|-2.1219479094725102e-05|tensor([-4.2271], grad_fn=<AddBackward0>)
-110|0|-1.1920930376163597e-07|tensor([-2.3726], grad_fn=<AddBackward0>)
-111|0|-2.0265784769435413e-05|tensor([-4.1931], grad_fn=<AddBackward0>)
-112|0|-2.8312606445979327e-05|tensor([-4.5435], grad_fn=<AddBackward0>)
-113|0|-1.1920930376163597e-07|tensor([-2.0194], grad_fn=<AddBackward0>)
-114|0|-2.7060874344897456e-05|tensor([-4.5095], grad_fn=<AddBackward0>)
-115|0|-1.1920930376163597e-07|tensor([-2.0844], grad_fn=<AddBackward0>)
-116|0|-2.580914406280499e-05|tensor([-4.4756], grad_fn=<AddBackward0>)
-117|0|-1.1920930376163597e-07|tensor([-2.1495], grad_fn=<AddBackward0>)
-118|0|-2.461702206346672e-05|tensor([-4.4416], grad_fn=<AddBackward0>)
-119|0|-1.1920930376163597e-07|tensor([-2.2145], grad_fn=<AddBackward0>)
-120|0|-2.3484506527893245e-05|tensor([-4.4076], grad_fn=<AddBackward0>)
-121|0|-1.1920930376163597e-07|tensor([-2.2795], grad_fn=<AddBackward0>)
-122|0|-2.2411597456084564e-05|tensor([-4.3736], grad_fn=<AddBackward0>)
-123|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-124|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-125|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-126|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-127|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-128|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-129|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-130|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-131|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-132|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-133|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-134|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-135|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-136|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-137|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-138|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-139|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-140|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-141|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-142|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-143|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-144|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-145|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-146|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-147|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-148|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-149|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-150|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-151|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-152|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-153|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-154|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-155|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-156|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-157|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-158|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-159|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-160|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-161|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-162|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-163|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-164|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-165|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-166|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-167|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-168|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-169|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-170|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-171|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-172|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-173|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-174|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-175|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-176|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-177|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-178|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-179|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-180|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-181|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-182|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-183|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-184|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-185|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-186|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-187|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-188|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-189|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-190|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-191|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-192|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-193|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-194|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-195|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-196|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-197|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-198|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-199|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-200|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-201|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-202|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-203|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-204|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-205|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-206|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-207|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-208|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-209|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-210|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-211|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-212|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-213|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-214|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-215|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-216|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-217|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-218|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-219|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-220|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-221|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-222|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-223|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-224|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-225|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-226|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-227|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-228|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-229|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-230|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-231|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-232|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-233|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-234|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-235|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-236|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-237|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-238|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-239|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-240|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-241|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-242|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-243|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-244|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-245|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-246|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-247|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-248|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-249|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-250|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-251|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-252|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-253|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-254|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-255|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-256|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-257|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-258|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-259|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-260|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-261|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-262|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-263|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-264|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-265|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-266|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-267|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-268|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-269|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-270|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-271|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-272|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-273|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-274|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-275|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-276|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-277|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-278|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-279|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-280|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-281|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-282|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-283|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-284|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-285|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-286|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-287|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-288|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-289|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-290|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-291|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-292|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-293|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-294|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-295|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-296|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-297|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-298|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-299|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-300|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-301|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-302|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-303|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-304|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-305|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-306|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-307|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-308|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-309|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-310|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-311|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-312|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-313|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-314|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-315|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-316|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-317|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-318|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-319|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-320|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-321|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-322|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-323|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-324|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-325|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-326|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-327|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-328|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-329|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-330|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-331|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-332|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-333|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-334|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-335|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-336|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-337|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-338|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-339|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-340|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-341|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-342|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-343|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-344|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-345|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-346|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-347|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-348|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-349|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-350|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-351|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-352|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-353|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-354|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-355|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-356|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-357|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-358|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-359|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-360|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-361|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-362|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-363|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-364|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-365|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-366|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-367|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-368|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-369|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-370|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-371|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-372|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-373|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-374|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-375|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-376|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-377|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-378|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-379|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-380|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-381|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-382|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-383|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-384|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-385|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-386|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-387|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-388|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-389|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-390|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-391|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-392|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-393|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-394|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-395|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-396|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
-397|0|-2.8610638764803298e-05|tensor([-4.6275], grad_fn=<AddBackward0>)
-398|0|-1.1920930376163597e-07|tensor([-1.9449], grad_fn=<AddBackward0>)
+1|0|0|[234, False, False, 128, False, False, 77, False, False, 458, False, False, 0, True, True, 110, False, False, 119, False, False, 169, False, False, 154, False, False, 0]
+2|0|0|[622, False, False, 234, False, False, 128, False, False, 318, False, False, 458, True, False, 0, False, True, 207, False, False, 119, False, False, 169, False, False, 0]
+3|0|0|[622, False, False, 234, False, False, 128, False, False, 318, False, False, 343, True, False, 0, False, True, 207, False, False, 119, False, False, 169, False, False, 115]
+4|0|0|[250, False, False, 622, False, False, 234, False, False, 449, False, False, 318, True, False, 343, False, False, 305, False, False, 207, False, False, 119, False, False, 81]
+5|0|0|[263, False, False, 250, False, False, 622, False, False, 347, False, False, 449, True, False, 318, False, False, 172, False, False, 305, False, False, 207, False, False, 50]
+6|0|0|[374, False, False, 263, False, False, 250, False, False, 336, False, False, 347, True, False, 449, False, False, 323, False, False, 172, False, False, 305, False, False, 6]
+7|0|0|[374, False, False, 263, False, False, 250, False, False, 336, False, False, 260, True, False, 449, False, False, 323, False, False, 172, False, False, 305, False, False, 93]
+8|0|0|[320, False, False, 374, False, False, 263, False, False, 736, False, False, 336, True, False, 260, False, False, 462, False, False, 323, False, False, 172, False, False, 67]
+9|0|0|[488, False, False, 320, False, False, 374, False, False, 563, False, False, 736, True, False, 336, False, False, 522, False, False, 462, False, False, 323, False, False, 34]
+10|0|0|[488, False, False, 320, False, False, 374, False, False, 563, False, False, 552, True, False, 336, False, False, 522, False, False, 462, False, False, 323, False, False, 218]
+11|0|0|[414, False, False, 488, False, False, 320, False, False, 952, False, False, 563, True, False, 552, False, False, 511, False, False, 522, False, False, 462, False, False, 163]
+12|0|0|[306, False, False, 414, False, False, 488, False, False, 459, False, False, 952, True, False, 563, False, False, 453, False, False, 511, False, False, 522, False, False, 107]
+13|0|0|[450, False, False, 306, False, False, 414, False, False, 526, False, False, 459, True, False, 952, False, False, 225, False, False, 453, False, False, 511, False, False, 12]
+14|0|0|[450, False, False, 306, False, False, 414, False, False, 526, False, False, 344, True, False, 952, False, False, 225, False, False, 453, False, False, 511, False, False, 127]
+15|0|0|[143, False, False, 450, False, False, 306, False, False, 266, False, False, 526, True, False, 344, False, False, 152, False, False, 225, False, False, 453, False, False, 93]
+16|0|0|[177, False, False, 143, False, False, 450, False, False, 39, False, False, 266, True, False, 526, False, False, 172, False, False, 152, False, False, 225, False, False, 41]
+17|0|3|[69, False, False, 177, False, False, 143, False, False, 37, False, False, 39, True, False, 266, False, False, 60, False, False, 172, False, False, 152, False, False, 15]
+18|0|3|[97, False, False, 336, False, False, 181, False, False, 69, False, False, 177, True, False, 143, False, False, 37, False, False, 39, False, False, 266, False, False, 12]
+19|0|3|[97, False, False, 336, False, False, 181, False, False, 69, False, False, 132, True, False, 143, False, False, 37, False, False, 39, False, False, 266, False, False, 57]
+20|0|0|[118, False, False, 206, False, False, 181, False, False, 97, False, False, 336, True, False, 181, False, False, 69, False, False, 132, False, False, 143, False, False, 44]
+21|0|0|[100, False, False, 118, False, False, 206, False, False, 70, False, False, 97, True, False, 336, False, False, 51, False, False, 69, False, False, 132, False, False, 11]
+22|0|0|[139, False, False, 100, False, False, 118, False, False, 54, False, False, 70, True, False, 97, False, False, 41, False, False, 51, False, False, 69, False, False, 2]
+23|0|0|[139, False, False, 100, False, False, 118, False, False, 54, False, False, 52, True, False, 97, False, False, 41, False, False, 51, False, False, 69, False, False, 20]
+24|0|0|[187, False, False, 139, False, False, 100, False, False, 98, False, False, 54, True, False, 52, False, False, 21, False, False, 41, False, False, 51, False, False, 15]
+25|0|0|[88, False, False, 187, False, False, 139, False, False, 69, False, False, 98, True, False, 54, False, False, 32, False, False, 21, False, False, 41, False, False, 10]
+26|0|0|[131, False, False, 88, False, False, 187, False, False, 54, False, False, 69, True, False, 98, False, False, 63, False, False, 32, False, False, 21, False, False, 1]
+27|0|0|[131, False, False, 88, False, False, 187, False, False, 54, False, False, 51, True, False, 98, False, False, 63, False, False, 32, False, False, 21, False, False, 19]
+28|0|0|[126, False, False, 131, False, False, 88, False, False, 107, False, False, 54, True, False, 51, False, False, 182, False, False, 63, False, False, 32, False, False, 14]
+29|0|0|[229, False, False, 126, False, False, 131, False, False, 109, False, False, 107, True, False, 54, False, False, 438, False, False, 182, False, False, 63, False, False, 9]
+30|0|0|[229, False, False, 126, False, False, 131, False, False, 109, False, False, 80, True, False, 54, False, False, 438, False, False, 182, False, False, 63, False, False, 36]
+31|0|0|[155, False, False, 229, False, False, 126, False, False, 123, False, False, 109, True, False, 80, False, False, 175, False, False, 438, False, False, 182, False, False, 28]
+32|0|0|[272, False, False, 155, False, False, 229, False, False, 280, False, False, 123, True, False, 109, False, False, 326, False, False, 175, False, False, 438, False, False, 18]
+33|0|0|[190, False, False, 272, False, False, 155, False, False, 175, False, False, 280, True, False, 123, False, False, 307, False, False, 326, False, False, 175, False, False, 6]
+34|0|0|[190, False, False, 272, False, False, 155, False, False, 175, False, False, 210, True, False, 123, False, False, 307, False, False, 326, False, False, 175, False, False, 76]
+35|0|0|[276, False, False, 190, False, False, 272, False, False, 312, False, False, 175, True, False, 210, False, False, 127, False, False, 307, False, False, 326, False, False, 55]
+36|0|0|[97, False, False, 276, False, False, 190, False, False, 91, False, False, 312, True, False, 175, False, False, 96, False, False, 127, False, False, 307, False, False, 38]
+37|0|0|[47, False, False, 97, False, False, 276, False, False, 78, False, False, 91, True, False, 312, False, False, 48, False, False, 96, False, False, 127, False, False, 7]
+38|0|0|[47, False, False, 97, False, False, 276, False, False, 78, False, False, 68, True, False, 312, False, False, 48, False, False, 96, False, False, 127, False, False, 30]
+39|0|0|[178, False, False, 47, False, False, 97, False, False, 108, False, False, 78, True, False, 68, False, False, 56, False, False, 48, False, False, 96, False, False, 24]
+40|0|0|[216, False, False, 178, False, False, 47, False, False, 91, False, False, 108, True, False, 78, False, False, 221, False, False, 56, False, False, 48, False, False, 17]
+41|0|0|[131, False, False, 216, False, False, 178, False, False, 105, False, False, 91, True, False, 108, False, False, 161, False, False, 221, False, False, 56, False, False, 7]
+42|0|0|[131, False, False, 216, False, False, 178, False, False, 105, False, False, 68, True, False, 108, False, False, 161, False, False, 221, False, False, 56, False, False, 30]
+43|0|0|[73, False, False, 131, False, False, 216, False, False, 51, False, False, 105, True, False, 68, False, False, 207, False, False, 161, False, False, 221, False, False, 24]
+44|0|0|[70, False, False, 73, False, False, 131, False, False, 193, False, False, 51, True, False, 105, False, False, 77, False, False, 207, False, False, 161, False, False, 14]
+45|0|3|[104, False, False, 70, False, False, 73, False, False, 67, False, False, 193, True, False, 51, False, False, 128, False, False, 77, False, False, 207, False, False, 9]
+46|0|3|[104, False, False, 70, False, False, 73, False, False, 67, False, False, 144, True, False, 51, False, False, 128, False, False, 77, False, False, 207, False, False, 58]
+47|0|0|[108, False, False, 153, False, False, 200, False, False, 104, False, False, 70, True, False, 73, False, False, 67, False, False, 144, False, False, 51, False, False, 44]
+48|0|0|[156, False, False, 108, False, False, 153, False, False, 127, False, False, 104, True, False, 70, False, False, 373, False, False, 67, False, False, 144, False, False, 37]
+49|0|0|[120, False, False, 156, False, False, 108, False, False, 236, False, False, 127, True, False, 104, False, False, 682, False, False, 373, False, False, 67, False, False, 27]
+50|0|0|[250, False, False, 120, False, False, 156, False, False, 568, False, False, 236, True, False, 127, False, False, 429, False, False, 682, False, False, 373, False, False, 15]
+51|0|0|[250, False, False, 120, False, False, 156, False, False, 568, False, False, 177, True, False, 127, False, False, 429, False, False, 682, False, False, 373, False, False, 74]
+52|0|3|[760, False, False, 250, False, False, 120, False, False, 335, False, False, 568, True, False, 177, False, False, 399, False, False, 429, False, False, 682, False, False, 57]
+53|0|0|[216, False, False, 206, False, False, 161, False, False, 760, False, False, 250, True, False, 120, False, False, 335, False, False, 568, False, False, 177, False, False, 1]
+54|0|0|[216, False, False, 206, False, False, 161, False, False, 760, False, False, 187, True, False, 120, False, False, 335, False, False, 568, False, False, 177, False, False, 64]
+55|0|0|[178, False, False, 216, False, False, 206, False, False, 330, False, False, 760, True, False, 187, False, False, 280, False, False, 335, False, False, 568, False, False, 46]
+56|0|0|[178, False, False, 216, False, False, 206, False, False, 330, False, False, 570, True, False, 187, False, False, 280, False, False, 335, False, False, 568, False, False, 236]
+57|0|0|[281, False, False, 178, False, False, 216, False, False, 282, False, False, 330, True, False, 570, False, False, 216, False, False, 280, False, False, 335, False, False, 179]
+58|0|0|[161, False, False, 281, False, False, 178, False, False, 404, False, False, 282, True, False, 330, False, False, 232, False, False, 216, False, False, 280, False, False, 146]
+59|0|0|[176, False, False, 161, False, False, 281, False, False, 347, False, False, 404, True, False, 282, False, False, 478, False, False, 232, False, False, 216, False, False, 118]
+60|0|0|[234, False, False, 176, False, False, 161, False, False, 289, False, False, 347, True, False, 404, False, False, 261, False, False, 478, False, False, 232, False, False, 78]
+61|0|0|[364, False, False, 234, False, False, 176, False, False, 596, False, False, 289, True, False, 347, False, False, 466, False, False, 261, False, False, 478, False, False, 44]
+62|0|0|[456, False, False, 364, False, False, 234, False, False, 238, False, False, 596, True, False, 289, False, False, 181, False, False, 466, False, False, 261, False, False, 16]
+63|0|0|[456, False, False, 364, False, False, 234, False, False, 238, False, False, 447, True, False, 289, False, False, 181, False, False, 466, False, False, 261, False, False, 165]
+64|0|3|[204, False, False, 456, False, False, 364, False, False, 193, False, False, 238, True, False, 447, False, False, 206, False, False, 181, False, False, 466, False, False, 121]
+65|0|3|[407, False, False, 138, False, False, 167, False, False, 204, False, False, 456, True, False, 364, False, False, 193, False, False, 238, False, False, 447, False, False, 98]
+66|0|0|[90, False, False, 117, False, False, 90, False, False, 407, False, False, 138, True, False, 167, False, False, 204, False, False, 456, False, False, 364, False, False, 53]
+67|0|1|[101, False, False, 90, False, False, 117, False, False, 401, False, False, 407, True, False, 138, False, False, 160, False, False, 204, False, False, 456, False, False, 40]
+68|0|0|[90, False, False, 117, False, False, 90, False, False, 407, False, False, 138, True, False, 167, False, False, 204, False, False, 456, False, False, 364, False, False, 0]
+69|0|0|[90, False, False, 117, False, False, 90, False, False, 407, False, False, 103, True, False, 167, False, False, 204, False, False, 456, False, False, 364, False, False, 35]
+70|0|1|[101, False, False, 90, False, False, 117, False, False, 401, False, False, 407, True, False, 103, False, False, 160, False, False, 204, False, False, 456, False, False, 25]
+71|0|1|[101, False, False, 90, False, False, 117, False, False, 401, False, False, 305, True, False, 103, False, False, 160, False, False, 204, False, False, 456, False, False, 127]
+72|0|0|[90, False, False, 117, False, False, 90, False, False, 305, False, False, 103, True, False, 167, False, False, 204, False, False, 456, False, False, 364, False, False, 97]
+73|0|1|[101, False, False, 90, False, False, 117, False, False, 401, False, False, 305, True, False, 103, False, False, 160, False, False, 204, False, False, 456, False, False, 87]
+74|0|0|[90, False, False, 117, False, False, 90, False, False, 305, False, False, 103, True, False, 167, False, False, 204, False, False, 456, False, False, 364, False, False, 57]
+75|0|1|[101, False, False, 90, False, False, 117, False, False, 401, False, False, 305, True, False, 103, False, False, 160, False, False, 204, False, False, 456, False, False, 47]
+76|0|0|[90, False, False, 117, False, False, 90, False, False, 305, False, False, 103, True, False, 167, False, False, 204, False, False, 456, False, False, 364, False, False, 17]
+77|0|1|[101, False, False, 90, False, False, 117, False, False, 401, False, False, 305, True, False, 103, False, False, 160, False, False, 204, False, False, 456, False, False, 7]
+78|0|1|[101, False, False, 90, False, False, 117, False, False, 401, False, False, 228, True, False, 103, False, False, 160, False, False, 204, False, False, 456, False, False, 84]
+79|0|3|[90, False, False, 117, False, False, 90, False, False, 228, False, False, 103, True, False, 167, False, False, 204, False, False, 456, False, False, 364, False, False, 62]
+80|0|0|[37, False, False, 173, False, False, 24, False, False, 90, False, False, 117, True, False, 90, False, False, 228, False, False, 103, False, False, 167, False, False, 52]
+81|0|0|[159, False, False, 37, False, False, 173, False, False, 101, False, False, 90, True, False, 117, False, False, 401, False, False, 228, False, False, 103, False, False, 41]
+82|0|0|[102, False, False, 159, False, False, 37, False, False, 315, False, False, 101, True, False, 90, False, False, 90, False, False, 401, False, False, 228, False, False, 32]
+83|0|3|[344, False, False, 102, False, False, 159, False, False, 168, False, False, 315, True, False, 101, False, False, 181, False, False, 90, False, False, 401, False, False, 22]
+84|0|0|[344, False, False, 102, False, False, 159, False, False, 168, False, False, 236, True, False, 101, False, False, 181, False, False, 90, False, False, 401, False, False, 101]
+85|0|0|[576, False, False, 344, False, False, 102, False, False, 449, False, False, 168, True, False, 236, False, False, 141, False, False, 181, False, False, 90, False, False, 78]
+86|0|0|[365, False, False, 576, False, False, 344, False, False, 250, False, False, 449, True, False, 168, False, False, 161, False, False, 141, False, False, 181, False, False, 62]
+87|0|0|[142, False, False, 365, False, False, 576, False, False, 169, False, False, 250, True, False, 449, False, False, 277, False, False, 161, False, False, 141, False, False, 18]
+88|0|0|[142, False, False, 365, False, False, 576, False, False, 169, False, False, 187, True, False, 449, False, False, 277, False, False, 161, False, False, 141, False, False, 81]
+89|0|0|[229, False, False, 142, False, False, 365, False, False, 339, False, False, 169, True, False, 187, False, False, 184, False, False, 277, False, False, 161, False, False, 63]
+90|0|0|[128, False, False, 229, False, False, 142, False, False, 120, False, False, 339, True, False, 169, False, False, 267, False, False, 184, False, False, 277, False, False, 47]
+91|0|0|[113, False, False, 128, False, False, 229, False, False, 148, False, False, 120, True, False, 339, False, False, 169, False, False, 267, False, False, 184, False, False, 14]
+92|0|0|[260, False, False, 113, False, False, 128, False, False, 292, False, False, 148, True, False, 120, False, False, 86, False, False, 169, False, False, 267, False, False, 2]
+93|0|0|[260, False, False, 113, False, False, 128, False, False, 292, False, False, 111, True, False, 120, False, False, 86, False, False, 169, False, False, 267, False, False, 39]
+94|0|3|[336, False, False, 260, False, False, 113, False, False, 81, False, False, 292, True, False, 111, False, False, 274, False, False, 86, False, False, 169, False, False, 28]
+95|0|3|[336, False, False, 260, False, False, 113, False, False, 81, False, False, 219, True, False, 111, False, False, 274, False, False, 86, False, False, 169, False, False, 101]
+96|0|0|[336, False, False, 260, False, False, 113, False, False, 336, False, False, 260, True, False, 113, False, False, 81, False, False, 219, False, False, 111, False, False, 80]
+97|0|0|[135, False, False, 336, False, False, 260, False, False, 135, False, False, 336, True, False, 260, False, False, 85, False, False, 81, False, False, 219, False, False, 54]
+98|0|0|[154, False, False, 135, False, False, 336, False, False, 154, False, False, 135, True, False, 336, False, False, 233, False, False, 85, False, False, 81, False, False, 21]
+99|0|0|[55, False, False, 154, False, False, 135, False, False, 55, False, False, 154, True, False, 135, False, False, 71, False, False, 233, False, False, 85, False, False, 8]
+100|0|0|[55, False, False, 154, False, False, 135, False, False, 55, False, False, 115, True, False, 135, False, False, 71, False, False, 233, False, False, 85, False, False, 47]
+101|0|3|[58, False, False, 55, False, False, 154, False, False, 58, False, False, 55, True, False, 115, False, False, 104, False, False, 71, False, False, 233, False, False, 36]
+102|0|0|[104, False, False, 71, False, False, 233, False, False, 58, False, False, 55, True, False, 154, False, False, 58, False, False, 55, False, False, 115, False, False, 31]
+103|0|0|[127, False, False, 104, False, False, 71, False, False, 80, False, False, 58, True, False, 55, False, False, 80, False, False, 58, False, False, 55, False, False, 26]
+104|0|0|[94, False, False, 127, False, False, 104, False, False, 124, False, False, 80, True, False, 58, False, False, 124, False, False, 80, False, False, 58, False, False, 21]
+105|0|0|[82, False, False, 94, False, False, 127, False, False, 281, False, False, 124, True, False, 80, False, False, 281, False, False, 124, False, False, 80, False, False, 13]
+106|0|0|[258, False, False, 82, False, False, 94, False, False, 109, False, False, 281, True, False, 124, False, False, 109, False, False, 281, False, False, 124, False, False, 1]
+107|0|0|[258, False, False, 82, False, False, 94, False, False, 109, False, False, 210, True, False, 124, False, False, 109, False, False, 281, False, False, 124, False, False, 72]
+108|0|3|[257, False, False, 258, False, False, 82, False, False, 109, False, False, 109, True, False, 210, False, False, 109, False, False, 109, False, False, 281, False, False, 51]
+109|0|0|[162, False, False, 64, False, False, 45, False, False, 257, False, False, 258, True, False, 82, False, False, 109, False, False, 109, False, False, 210, False, False, 41]
+110|0|0|[134, False, False, 162, False, False, 64, False, False, 101, False, False, 257, True, False, 258, False, False, 153, False, False, 109, False, False, 109, False, False, 16]
+111|0|0|[134, False, False, 162, False, False, 64, False, False, 101, False, False, 192, True, False, 258, False, False, 153, False, False, 109, False, False, 109, False, False, 81]
+112|0|0|[363, False, False, 134, False, False, 162, False, False, 161, False, False, 101, True, False, 192, False, False, 31, False, False, 153, False, False, 109, False, False, 62]
+113|0|3|[330, False, False, 363, False, False, 134, False, False, 115, False, False, 161, True, False, 101, False, False, 16, False, False, 31, False, False, 153, False, False, 52]
+114|0|0|[206, False, False, 161, False, False, 109, False, False, 330, False, False, 363, True, False, 134, False, False, 115, False, False, 161, False, False, 101, False, False, 36]
+115|0|0|[216, False, False, 206, False, False, 161, False, False, 76, False, False, 330, True, False, 363, False, False, 36, False, False, 115, False, False, 161, False, False, 0]
+116|0|0|[216, False, False, 206, False, False, 161, False, False, 76, False, False, 247, True, False, 363, False, False, 36, False, False, 115, False, False, 161, False, False, 83]
+117|0|0|[178, False, False, 216, False, False, 206, False, False, 80, False, False, 76, True, False, 247, False, False, 40, False, False, 36, False, False, 115, False, False, 59]
+118|0|0|[281, False, False, 178, False, False, 216, False, False, 99, False, False, 80, True, False, 76, False, False, 216, False, False, 40, False, False, 36, False, False, 52]
+119|0|0|[161, False, False, 281, False, False, 178, False, False, 114, False, False, 99, True, False, 80, False, False, 44, False, False, 216, False, False, 40, False, False, 44]
+120|0|0|[176, False, False, 161, False, False, 281, False, False, 327, False, False, 114, True, False, 99, False, False, 70, False, False, 44, False, False, 216, False, False, 35]
+121|0|0|[234, False, False, 176, False, False, 161, False, False, 126, False, False, 327, True, False, 114, False, False, 238, False, False, 70, False, False, 44, False, False, 24]
+122|0|0|[234, False, False, 176, False, False, 161, False, False, 126, False, False, 245, True, False, 114, False, False, 238, False, False, 70, False, False, 44, False, False, 106]
+123|0|0|[364, False, False, 234, False, False, 176, False, False, 167, False, False, 126, True, False, 245, False, False, 90, False, False, 238, False, False, 70, False, False, 82]
+124|0|0|[456, False, False, 364, False, False, 234, False, False, 138, False, False, 167, True, False, 126, False, False, 117, False, False, 90, False, False, 238, False, False, 70]
+125|0|0|[204, False, False, 456, False, False, 364, False, False, 407, False, False, 138, True, False, 167, False, False, 90, False, False, 117, False, False, 90, False, False, 54]
+126|0|0|[160, False, False, 204, False, False, 456, False, False, 401, False, False, 407, True, False, 138, False, False, 101, False, False, 90, False, False, 117, False, False, 41]
+127|0|0|[318, False, False, 160, False, False, 204, False, False, 90, False, False, 401, True, False, 407, False, False, 315, False, False, 101, False, False, 90, False, False, 1]
+128|0|0|[318, False, False, 160, False, False, 204, False, False, 90, False, False, 300, True, False, 407, False, False, 315, False, False, 101, False, False, 90, False, False, 102]
+129|0|0|[195, False, False, 318, False, False, 160, False, False, 181, False, False, 90, True, False, 300, False, False, 168, False, False, 315, False, False, 101, False, False, 72]
+130|0|0|[293, False, False, 195, False, False, 318, False, False, 141, False, False, 181, True, False, 90, False, False, 449, False, False, 168, False, False, 315, False, False, 63]
+131|0|0|[160, False, False, 293, False, False, 195, False, False, 161, False, False, 141, True, False, 181, False, False, 250, False, False, 449, False, False, 168, False, False, 45]
+132|0|0|[250, False, False, 160, False, False, 293, False, False, 277, False, False, 161, True, False, 141, False, False, 169, False, False, 250, False, False, 449, False, False, 31]
+133|0|0|[392, False, False, 250, False, False, 160, False, False, 184, False, False, 277, True, False, 161, False, False, 339, False, False, 169, False, False, 250, False, False, 15]
+134|0|0|[392, False, False, 250, False, False, 160, False, False, 184, False, False, 207, True, False, 161, False, False, 339, False, False, 169, False, False, 250, False, False, 85]
+135|0|0|[194, False, False, 392, False, False, 250, False, False, 267, False, False, 184, True, False, 207, False, False, 120, False, False, 339, False, False, 169, False, False, 65]
+136|0|0|[175, False, False, 194, False, False, 392, False, False, 169, False, False, 267, True, False, 184, False, False, 148, False, False, 120, False, False, 339, False, False, 47]
+137|0|0|[99, False, False, 175, False, False, 194, False, False, 86, False, False, 169, True, False, 267, False, False, 292, False, False, 148, False, False, 120, False, False, 21]
+138|0|0|[64, False, False, 99, False, False, 175, False, False, 274, False, False, 86, True, False, 169, False, False, 81, False, False, 292, False, False, 148, False, False, 5]
+139|0|0|[64, False, False, 99, False, False, 175, False, False, 274, False, False, 64, True, False, 169, False, False, 81, False, False, 292, False, False, 148, False, False, 27]
+140|0|3|[84, False, False, 64, False, False, 99, False, False, 53, False, False, 274, True, False, 64, False, False, 85, False, False, 81, False, False, 292, False, False, 21]
+141|0|3|[84, False, False, 64, False, False, 99, False, False, 53, False, False, 205, True, False, 64, False, False, 85, False, False, 81, False, False, 292, False, False, 90]
+142|0|0|[75, False, False, 110, False, False, 145, False, False, 84, False, False, 64, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 70]
+143|0|1|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 84, True, False, 64, False, False, 56, False, False, 53, False, False, 205, False, False, 64]
+144|0|0|[75, False, False, 110, False, False, 145, False, False, 84, False, False, 64, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 56]
+145|0|1|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 84, True, False, 64, False, False, 56, False, False, 53, False, False, 205, False, False, 50]
+146|0|0|[75, False, False, 110, False, False, 145, False, False, 84, False, False, 64, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 42]
+147|0|1|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 84, True, False, 64, False, False, 56, False, False, 53, False, False, 205, False, False, 36]
+148|0|0|[75, False, False, 110, False, False, 145, False, False, 84, False, False, 64, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 28]
+149|0|1|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 84, True, False, 64, False, False, 56, False, False, 53, False, False, 205, False, False, 22]
+150|0|0|[75, False, False, 110, False, False, 145, False, False, 84, False, False, 64, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 14]
+151|0|1|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 84, True, False, 64, False, False, 56, False, False, 53, False, False, 205, False, False, 8]
+152|0|0|[75, False, False, 110, False, False, 145, False, False, 84, False, False, 64, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 0]
+153|0|0|[75, False, False, 110, False, False, 145, False, False, 84, False, False, 48, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 16]
+154|0|1|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 84, True, False, 48, False, False, 56, False, False, 53, False, False, 205, False, False, 12]
+155|0|0|[75, False, False, 110, False, False, 145, False, False, 84, False, False, 48, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 4]
+156|0|1|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 84, True, False, 48, False, False, 56, False, False, 53, False, False, 205, False, False, 0]
+157|0|1|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 63, True, False, 48, False, False, 56, False, False, 53, False, False, 205, False, False, 21]
+158|0|0|[75, False, False, 110, False, False, 145, False, False, 63, False, False, 48, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 15]
+159|0|1|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 63, True, False, 48, False, False, 56, False, False, 53, False, False, 205, False, False, 11]
+160|0|0|[75, False, False, 110, False, False, 145, False, False, 63, False, False, 48, True, False, 99, False, False, 53, False, False, 205, False, False, 64, False, False, 5]
+161|0|0|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 63, True, False, 48, False, False, 56, False, False, 53, False, False, 205, False, False, 1]
+162|0|0|[57, False, False, 75, False, False, 110, False, False, 165, False, False, 47, True, False, 48, False, False, 56, False, False, 53, False, False, 205, False, False, 17]
+163|0|0|[37, False, False, 57, False, False, 75, False, False, 68, False, False, 165, True, False, 47, False, False, 62, False, False, 56, False, False, 53, False, False, 13]
+164|0|0|[37, False, False, 57, False, False, 75, False, False, 68, False, False, 123, True, False, 47, False, False, 62, False, False, 56, False, False, 53, False, False, 55]
+165|0|0|[133, False, False, 37, False, False, 57, False, False, 105, False, False, 68, True, False, 123, False, False, 250, False, False, 62, False, False, 56, False, False, 43]
+166|0|0|[74, False, False, 133, False, False, 37, False, False, 102, False, False, 105, True, False, 68, False, False, 450, False, False, 250, False, False, 62, False, False, 37]
+167|0|3|[74, False, False, 74, False, False, 133, False, False, 93, False, False, 102, True, False, 105, False, False, 152, False, False, 450, False, False, 250, False, False, 27]
+168|0|0|[131, False, False, 216, False, False, 178, False, False, 74, False, False, 74, True, False, 133, False, False, 93, False, False, 102, False, False, 105, False, False, 17]
+169|0|0|[73, False, False, 131, False, False, 216, False, False, 200, False, False, 74, True, False, 74, False, False, 275, False, False, 93, False, False, 102, False, False, 10]
+170|0|0|[70, False, False, 73, False, False, 131, False, False, 153, False, False, 200, True, False, 74, False, False, 138, False, False, 275, False, False, 93, False, False, 3]
+171|0|0|[70, False, False, 73, False, False, 131, False, False, 153, False, False, 150, True, False, 74, False, False, 138, False, False, 275, False, False, 93, False, False, 53]
+172|0|3|[104, False, False, 70, False, False, 73, False, False, 108, False, False, 153, True, False, 150, False, False, 85, False, False, 138, False, False, 275, False, False, 38]
+173|0|0|[67, False, False, 193, False, False, 51, False, False, 104, False, False, 70, True, False, 73, False, False, 108, False, False, 153, False, False, 150, False, False, 23]
+174|0|0|[373, False, False, 67, False, False, 193, False, False, 127, False, False, 104, True, False, 70, False, False, 156, False, False, 108, False, False, 153, False, False, 16]
+175|0|0|[682, False, False, 373, False, False, 67, False, False, 236, False, False, 127, True, False, 104, False, False, 120, False, False, 156, False, False, 108, False, False, 6]
+176|0|0|[682, False, False, 373, False, False, 67, False, False, 236, False, False, 95, True, False, 104, False, False, 120, False, False, 156, False, False, 108, False, False, 38]
+177|0|0|[429, False, False, 682, False, False, 373, False, False, 568, False, False, 236, True, False, 95, False, False, 250, False, False, 120, False, False, 156, False, False, 29]
+178|0|0|[399, False, False, 429, False, False, 682, False, False, 335, False, False, 568, True, False, 236, False, False, 760, False, False, 250, False, False, 120, False, False, 6]
+179|0|0|[399, False, False, 429, False, False, 682, False, False, 335, False, False, 426, True, False, 236, False, False, 760, False, False, 250, False, False, 120, False, False, 148]
+180|0|0|[297, False, False, 399, False, False, 429, False, False, 280, False, False, 335, True, False, 426, False, False, 330, False, False, 760, False, False, 250, False, False, 106]
+181|0|3|[218, False, False, 297, False, False, 399, False, False, 216, False, False, 280, True, False, 335, False, False, 282, False, False, 330, False, False, 760, False, False, 73]
+182|0|0|[320, False, False, 374, False, False, 263, False, False, 218, False, False, 297, True, False, 399, False, False, 216, False, False, 280, False, False, 335, False, False, 45]
+183|0|0|[488, False, False, 320, False, False, 374, False, False, 261, False, False, 218, True, False, 297, False, False, 232, False, False, 216, False, False, 280, False, False, 16]
+184|0|0|[488, False, False, 320, False, False, 374, False, False, 261, False, False, 163, True, False, 297, False, False, 232, False, False, 216, False, False, 280, False, False, 71]
+185|0|0|[414, False, False, 488, False, False, 320, False, False, 318, False, False, 261, True, False, 163, False, False, 478, False, False, 232, False, False, 216, False, False, 55]
+186|0|0|[306, False, False, 414, False, False, 488, False, False, 265, False, False, 318, True, False, 261, False, False, 261, False, False, 478, False, False, 232, False, False, 29]
+187|0|0|[306, False, False, 414, False, False, 488, False, False, 265, False, False, 238, True, False, 261, False, False, 261, False, False, 478, False, False, 232, False, False, 109]
+188|0|0|[450, False, False, 306, False, False, 414, False, False, 161, False, False, 265, True, False, 238, False, False, 466, False, False, 261, False, False, 478, False, False, 86]
+189|0|0|[143, False, False, 450, False, False, 306, False, False, 181, False, False, 161, True, False, 265, False, False, 181, False, False, 466, False, False, 261, False, False, 60]
+190|0|0|[177, False, False, 143, False, False, 450, False, False, 336, False, False, 181, True, False, 161, False, False, 206, False, False, 181, False, False, 466, False, False, 44]
+191|0|0|[69, False, False, 177, False, False, 143, False, False, 97, False, False, 336, True, False, 181, False, False, 118, False, False, 206, False, False, 181, False, False, 26]
+192|0|0|[69, False, False, 177, False, False, 143, False, False, 97, False, False, 252, True, False, 181, False, False, 118, False, False, 206, False, False, 181, False, False, 110]
+193|0|3|[51, False, False, 69, False, False, 177, False, False, 70, False, False, 97, True, False, 252, False, False, 100, False, False, 118, False, False, 206, False, False, 85]
+194|0|3|[73, False, False, 37, False, False, 39, False, False, 51, False, False, 69, True, False, 177, False, False, 70, False, False, 97, False, False, 252, False, False, 76]
+195|0|0|[52, False, False, 60, False, False, 172, False, False, 73, False, False, 37, True, False, 39, False, False, 51, False, False, 69, False, False, 177, False, False, 70]
+196|0|0|[40, False, False, 52, False, False, 60, False, False, 16, False, False, 73, True, False, 37, False, False, 41, False, False, 51, False, False, 69, False, False, 67]
+197|0|0|[176, False, False, 40, False, False, 52, False, False, 6, False, False, 16, True, False, 73, False, False, 21, False, False, 41, False, False, 51, False, False, 60]
+198|0|2|[85, False, False, 176, False, False, 40, False, False, 61, False, False, 6, True, False, 16, False, False, 32, False, False, 21, False, False, 41, False, False, 59]
+199|0|0|[61, False, False, 6, False, False, 16, False, False, 32, False, False, 21, True, False, 41, False, False, 69, False, False, 98, False, False, 54, False, False, 59]
+200|0|1|[32, False, False, 61, False, False, 6, False, False, 63, False, False, 32, True, False, 21, False, False, 54, False, False, 69, False, False, 98, False, False, 57]
+201|0|3|[61, False, False, 6, False, False, 16, False, False, 32, False, False, 21, True, False, 41, False, False, 69, False, False, 98, False, False, 54, False, False, 54]
+202|0|0|[85, False, False, 176, False, False, 40, False, False, 61, False, False, 6, True, False, 16, False, False, 32, False, False, 21, False, False, 41, False, False, 52]
+203|0|0|[239, False, False, 85, False, False, 176, False, False, 32, False, False, 61, True, False, 6, False, False, 63, False, False, 32, False, False, 21, False, False, 52]
+204|0|0|[220, False, False, 239, False, False, 85, False, False, 225, False, False, 32, True, False, 61, False, False, 182, False, False, 63, False, False, 32, False, False, 46]
+205|0|0|[253, False, False, 220, False, False, 239, False, False, 433, False, False, 225, True, False, 32, False, False, 438, False, False, 182, False, False, 63, False, False, 43]
+206|0|0|[323, False, False, 253, False, False, 220, False, False, 450, False, False, 433, True, False, 225, False, False, 175, False, False, 438, False, False, 182, False, False, 21]
+207|0|0|[323, False, False, 253, False, False, 220, False, False, 450, False, False, 324, True, False, 225, False, False, 175, False, False, 438, False, False, 182, False, False, 130]
+208|0|3|[97, False, False, 323, False, False, 253, False, False, 111, False, False, 450, True, False, 324, False, False, 326, False, False, 175, False, False, 438, False, False, 98]
+209|0|3|[181, False, False, 198, False, False, 75, False, False, 97, False, False, 323, True, False, 253, False, False, 111, False, False, 450, False, False, 324, False, False, 53]
+210|0|0|[152, False, False, 66, False, False, 50, False, False, 181, False, False, 198, True, False, 75, False, False, 97, False, False, 323, False, False, 253, False, False, 21]
+211|0|0|[262, False, False, 152, False, False, 66, False, False, 331, False, False, 181, True, False, 198, False, False, 116, False, False, 97, False, False, 323, False, False, 2]
+212|0|0|[262, False, False, 152, False, False, 66, False, False, 331, False, False, 135, True, False, 198, False, False, 116, False, False, 97, False, False, 323, False, False, 48]
+213|0|0|[243, False, False, 262, False, False, 152, False, False, 477, False, False, 331, True, False, 135, False, False, 292, False, False, 116, False, False, 97, False, False, 35]
+214|0|0|[119, False, False, 243, False, False, 262, False, False, 389, False, False, 477, True, False, 331, False, False, 93, False, False, 292, False, False, 116, False, False, 2]
+215|0|0|[119, False, False, 243, False, False, 262, False, False, 389, False, False, 357, True, False, 331, False, False, 93, False, False, 292, False, False, 116, False, False, 122]
+216|0|0|[66, False, False, 119, False, False, 243, False, False, 117, False, False, 389, True, False, 357, False, False, 116, False, False, 93, False, False, 292, False, False, 87]
+217|0|3|[293, False, False, 66, False, False, 119, False, False, 66, False, False, 117, True, False, 389, False, False, 233, False, False, 116, False, False, 93, False, False, 49]
+218|0|1|[134, False, False, 52, False, False, 265, False, False, 293, False, False, 66, True, False, 119, False, False, 66, False, False, 117, False, False, 389, False, False, 38]
+219|0|3|[52, False, False, 265, False, False, 152, False, False, 66, False, False, 119, True, False, 243, False, False, 117, False, False, 389, False, False, 357, False, False, 32]
+220|0|3|[209, False, False, 159, False, False, 91, False, False, 52, False, False, 265, True, False, 152, False, False, 66, False, False, 119, False, False, 243, False, False, 21]
+221|0|3|[209, False, False, 159, False, False, 91, False, False, 52, False, False, 198, True, False, 152, False, False, 66, False, False, 119, False, False, 243, False, False, 88]
+222|0|0|[56, False, False, 260, False, False, 129, False, False, 209, False, False, 159, True, False, 91, False, False, 52, False, False, 198, False, False, 152, False, False, 69]
+223|0|0|[259, False, False, 56, False, False, 260, False, False, 74, False, False, 209, True, False, 159, False, False, 134, False, False, 52, False, False, 198, False, False, 54]
+224|0|0|[205, False, False, 259, False, False, 56, False, False, 89, False, False, 74, True, False, 209, False, False, 117, False, False, 134, False, False, 52, False, False, 34]
+225|0|0|[70, False, False, 205, False, False, 259, False, False, 67, False, False, 89, True, False, 74, False, False, 88, False, False, 117, False, False, 134, False, False, 27]
+226|0|0|[48, False, False, 70, False, False, 205, False, False, 76, False, False, 67, True, False, 89, False, False, 46, False, False, 88, False, False, 117, False, False, 19]
+227|0|0|[195, False, False, 48, False, False, 70, False, False, 57, False, False, 76, True, False, 67, False, False, 53, False, False, 46, False, False, 88, False, False, 13]
+228|0|0|[150, False, False, 195, False, False, 48, False, False, 69, False, False, 57, True, False, 76, False, False, 72, False, False, 53, False, False, 46, False, False, 6]
+229|0|0|[126, False, False, 150, False, False, 195, False, False, 251, False, False, 69, True, False, 57, False, False, 104, False, False, 72, False, False, 53, False, False, 1]
+230|0|0|[126, False, False, 150, False, False, 195, False, False, 251, False, False, 51, True, False, 57, False, False, 104, False, False, 72, False, False, 53, False, False, 19]
+231|0|0|[363, False, False, 126, False, False, 150, False, False, 399, False, False, 251, True, False, 51, False, False, 420, False, False, 104, False, False, 72, False, False, 14]
+232|0|0|[363, False, False, 126, False, False, 150, False, False, 399, False, False, 188, True, False, 51, False, False, 420, False, False, 104, False, False, 72, False, False, 77]
+233|0|0|[234, False, False, 363, False, False, 126, False, False, 104, False, False, 399, True, False, 188, False, False, 160, False, False, 420, False, False, 104, False, False, 59]
+234|0|3|[23, False, False, 234, False, False, 363, False, False, 109, False, False, 104, True, False, 399, False, False, 80, False, False, 160, False, False, 420, False, False, 20]
+235|0|3|[25, False, False, 40, False, False, 108, False, False, 23, False, False, 234, True, False, 363, False, False, 109, False, False, 104, False, False, 399, False, False, 10]
+236|0|3|[25, False, False, 40, False, False, 108, False, False, 23, False, False, 175, True, False, 363, False, False, 109, False, False, 104, False, False, 399, False, False, 69]
+237|0|3|[25, False, False, 40, False, False, 108, False, False, 25, False, False, 40, True, False, 108, False, False, 23, False, False, 175, False, False, 363, False, False, 52]
+238|0|0|[23, False, False, 234, False, False, 363, False, False, 25, False, False, 40, True, False, 108, False, False, 25, False, False, 40, False, False, 108, False, False, 48]
+239|0|0|[231, False, False, 23, False, False, 234, False, False, 32, False, False, 25, True, False, 40, False, False, 32, False, False, 25, False, False, 40, False, False, 44]
+240|0|0|[166, False, False, 231, False, False, 23, False, False, 120, False, False, 32, True, False, 25, False, False, 120, False, False, 32, False, False, 25, False, False, 42]
+241|0|0|[107, False, False, 166, False, False, 231, False, False, 234, False, False, 120, True, False, 32, False, False, 234, False, False, 120, False, False, 32, False, False, 39]
+242|0|0|[133, False, False, 107, False, False, 166, False, False, 174, False, False, 234, True, False, 120, False, False, 174, False, False, 234, False, False, 120, False, False, 27]
+243|0|3|[335, False, False, 133, False, False, 107, False, False, 131, False, False, 174, True, False, 234, False, False, 131, False, False, 174, False, False, 234, False, False, 4]
+244|0|3|[335, False, False, 133, False, False, 107, False, False, 131, False, False, 130, True, False, 234, False, False, 131, False, False, 174, False, False, 234, False, False, 48]
+245|0|0|[234, False, False, 283, False, False, 394, False, False, 335, False, False, 133, True, False, 107, False, False, 131, False, False, 130, False, False, 234, False, False, 35]
+246|0|0|[299, False, False, 234, False, False, 283, False, False, 477, False, False, 335, True, False, 133, False, False, 191, False, False, 131, False, False, 130, False, False, 22]
+247|0|0|[299, False, False, 234, False, False, 283, False, False, 477, False, False, 251, True, False, 133, False, False, 191, False, False, 131, False, False, 130, False, False, 106]
+248|0|0|[400, False, False, 299, False, False, 234, False, False, 284, False, False, 477, True, False, 251, False, False, 169, False, False, 191, False, False, 131, False, False, 81]
+249|0|0|[281, False, False, 400, False, False, 299, False, False, 489, False, False, 284, True, False, 477, False, False, 283, False, False, 169, False, False, 191, False, False, 34]
+250|0|0|[480, False, False, 281, False, False, 400, False, False, 175, False, False, 489, True, False, 284, False, False, 231, False, False, 283, False, False, 169, False, False, 6]
+251|0|0|[480, False, False, 281, False, False, 400, False, False, 175, False, False, 366, True, False, 284, False, False, 231, False, False, 283, False, False, 169, False, False, 129]
+252|0|3|[352, False, False, 480, False, False, 281, False, False, 142, False, False, 175, True, False, 366, False, False, 176, False, False, 231, False, False, 283, False, False, 93]
+253|0|0|[560, False, False, 449, False, False, 335, False, False, 352, False, False, 480, True, False, 281, False, False, 142, False, False, 175, False, False, 366, False, False, 76]
+254|0|0|[448, False, False, 560, False, False, 449, False, False, 437, False, False, 352, True, False, 480, False, False, 370, False, False, 142, False, False, 175, False, False, 28]
+255|0|0|[448, False, False, 560, False, False, 449, False, False, 437, False, False, 264, True, False, 480, False, False, 370, False, False, 142, False, False, 175, False, False, 116]
+256|0|0|[787, False, False, 448, False, False, 560, False, False, 608, False, False, 437, True, False, 264, False, False, 235, False, False, 370, False, False, 142, False, False, 90]
+257|0|0|[296, False, False, 787, False, False, 448, False, False, 211, False, False, 608, True, False, 437, False, False, 309, False, False, 235, False, False, 370, False, False, 47]
+258|0|0|[296, False, False, 787, False, False, 448, False, False, 211, False, False, 456, True, False, 437, False, False, 309, False, False, 235, False, False, 370, False, False, 199]
+259|0|0|[111, False, False, 296, False, False, 787, False, False, 112, False, False, 211, True, False, 456, False, False, 121, False, False, 309, False, False, 235, False, False, 154]
+260|0|0|[113, False, False, 111, False, False, 296, False, False, 352, False, False, 112, True, False, 211, False, False, 208, False, False, 121, False, False, 309, False, False, 133]
+261|0|0|[34, False, False, 113, False, False, 111, False, False, 172, False, False, 352, True, False, 112, False, False, 494, False, False, 208, False, False, 121, False, False, 122]
+262|0|0|[71, False, False, 34, False, False, 113, False, False, 156, False, False, 172, True, False, 352, False, False, 173, False, False, 494, False, False, 208, False, False, 87]
+263|0|0|[56, False, False, 71, False, False, 34, False, False, 215, False, False, 156, True, False, 172, False, False, 367, False, False, 173, False, False, 494, False, False, 70]
+264|0|0|[68, False, False, 56, False, False, 71, False, False, 278, False, False, 215, True, False, 156, False, False, 123, False, False, 367, False, False, 173, False, False, 55]
+265|0|3|[152, False, False, 68, False, False, 56, False, False, 91, False, False, 278, True, False, 215, False, False, 129, False, False, 123, False, False, 367, False, False, 34]
+266|0|0|[243, False, False, 262, False, False, 152, False, False, 152, False, False, 68, True, False, 56, False, False, 91, False, False, 278, False, False, 215, False, False, 7]
+267|0|0|[119, False, False, 243, False, False, 262, False, False, 265, False, False, 152, True, False, 68, False, False, 159, False, False, 91, False, False, 278, False, False, 1]
+268|0|0|[119, False, False, 243, False, False, 262, False, False, 265, False, False, 114, True, False, 68, False, False, 159, False, False, 91, False, False, 278, False, False, 39]
+269|0|0|[66, False, False, 119, False, False, 243, False, False, 52, False, False, 265, True, False, 114, False, False, 209, False, False, 159, False, False, 91, False, False, 28]
+270|0|0|[293, False, False, 66, False, False, 119, False, False, 134, False, False, 52, True, False, 265, False, False, 74, False, False, 209, False, False, 159, False, False, 2]
+271|0|0|[293, False, False, 66, False, False, 119, False, False, 134, False, False, 39, True, False, 265, False, False, 74, False, False, 209, False, False, 159, False, False, 15]
+272|0|3|[194, False, False, 293, False, False, 66, False, False, 117, False, False, 134, True, False, 39, False, False, 89, False, False, 74, False, False, 209, False, False, 12]
+273|0|3|[194, False, False, 293, False, False, 66, False, False, 117, False, False, 100, True, False, 39, False, False, 89, False, False, 74, False, False, 209, False, False, 46]
+274|0|0|[94, False, False, 66, False, False, 117, False, False, 194, False, False, 293, True, False, 66, False, False, 117, False, False, 100, False, False, 39, False, False, 36]
+275|0|0|[297, False, False, 94, False, False, 66, False, False, 263, False, False, 194, True, False, 293, False, False, 88, False, False, 117, False, False, 100, False, False, 7]
+276|0|0|[297, False, False, 94, False, False, 66, False, False, 263, False, False, 145, True, False, 293, False, False, 88, False, False, 117, False, False, 100, False, False, 56]
+277|0|0|[358, False, False, 297, False, False, 94, False, False, 113, False, False, 263, True, False, 145, False, False, 46, False, False, 88, False, False, 117, False, False, 42]
+278|0|0|[109, False, False, 358, False, False, 297, False, False, 82, False, False, 113, True, False, 263, False, False, 53, False, False, 46, False, False, 88, False, False, 16]
+279|0|0|[68, False, False, 109, False, False, 358, False, False, 75, False, False, 82, True, False, 113, False, False, 72, False, False, 53, False, False, 46, False, False, 5]
+280|0|0|[68, False, False, 109, False, False, 358, False, False, 75, False, False, 61, True, False, 113, False, False, 72, False, False, 53, False, False, 46, False, False, 26]
+281|0|0|[199, False, False, 68, False, False, 109, False, False, 89, False, False, 75, True, False, 61, False, False, 104, False, False, 72, False, False, 53, False, False, 20]
+282|0|0|[83, False, False, 199, False, False, 68, False, False, 127, False, False, 89, True, False, 75, False, False, 420, False, False, 104, False, False, 72, False, False, 13]
+283|0|0|[112, False, False, 83, False, False, 199, False, False, 268, False, False, 127, True, False, 89, False, False, 160, False, False, 420, False, False, 104, False, False, 5]
+284|0|0|[112, False, False, 83, False, False, 199, False, False, 268, False, False, 95, True, False, 89, False, False, 160, False, False, 420, False, False, 104, False, False, 37]
+285|0|3|[107, False, False, 112, False, False, 83, False, False, 91, False, False, 268, True, False, 95, False, False, 80, False, False, 160, False, False, 420, False, False, 28]
+286|0|0|[172, False, False, 305, False, False, 207, False, False, 107, False, False, 112, True, False, 83, False, False, 91, False, False, 268, False, False, 95, False, False, 2]
+287|0|0|[172, False, False, 305, False, False, 207, False, False, 107, False, False, 84, True, False, 83, False, False, 91, False, False, 268, False, False, 95, False, False, 30]
+288|0|0|[323, False, False, 172, False, False, 305, False, False, 225, False, False, 107, True, False, 84, False, False, 117, False, False, 91, False, False, 268, False, False, 22]
+289|0|0|[462, False, False, 323, False, False, 172, False, False, 233, False, False, 225, True, False, 107, False, False, 419, False, False, 117, False, False, 91, False, False, 12]
+290|0|0|[462, False, False, 323, False, False, 172, False, False, 233, False, False, 168, True, False, 107, False, False, 419, False, False, 117, False, False, 91, False, False, 69]
+291|0|0|[522, False, False, 462, False, False, 323, False, False, 286, False, False, 233, True, False, 168, False, False, 468, False, False, 419, False, False, 117, False, False, 53]
+292|0|0|[511, False, False, 522, False, False, 462, False, False, 385, False, False, 286, True, False, 233, False, False, 394, False, False, 468, False, False, 419, False, False, 30]
+293|0|0|[453, False, False, 511, False, False, 522, False, False, 608, False, False, 385, True, False, 286, False, False, 311, False, False, 394, False, False, 468, False, False, 2]
+294|0|0|[453, False, False, 511, False, False, 522, False, False, 608, False, False, 288, True, False, 286, False, False, 311, False, False, 394, False, False, 468, False, False, 99]
+295|0|0|[225, False, False, 453, False, False, 511, False, False, 165, False, False, 608, True, False, 288, False, False, 226, False, False, 311, False, False, 394, False, False, 71]
+296|0|0|[152, False, False, 225, False, False, 453, False, False, 325, False, False, 165, True, False, 608, False, False, 200, False, False, 226, False, False, 311, False, False, 11]
+297|0|0|[152, False, False, 225, False, False, 453, False, False, 325, False, False, 123, True, False, 608, False, False, 200, False, False, 226, False, False, 311, False, False, 53]
+298|0|0|[172, False, False, 152, False, False, 225, False, False, 89, False, False, 325, True, False, 123, False, False, 422, False, False, 200, False, False, 226, False, False, 41]
+299|0|3|[60, False, False, 172, False, False, 152, False, False, 118, False, False, 89, True, False, 325, False, False, 373, False, False, 422, False, False, 200, False, False, 9]
+300|0|3|[37, False, False, 39, False, False, 266, False, False, 60, False, False, 172, True, False, 152, False, False, 118, False, False, 89, False, False, 325, False, False, 1]
+301|0|3|[37, False, False, 39, False, False, 266, False, False, 60, False, False, 129, True, False, 152, False, False, 118, False, False, 89, False, False, 325, False, False, 44]
+302|0|3|[69, False, False, 132, False, False, 143, False, False, 37, False, False, 39, True, False, 266, False, False, 60, False, False, 129, False, False, 152, False, False, 32]
+303|0|3|[97, False, False, 336, False, False, 181, False, False, 69, False, False, 132, True, False, 143, False, False, 37, False, False, 39, False, False, 266, False, False, 29]
+304|0|0|[118, False, False, 206, False, False, 181, False, False, 97, False, False, 336, True, False, 181, False, False, 69, False, False, 132, False, False, 143, False, False, 16]
+305|0|0|[118, False, False, 206, False, False, 181, False, False, 97, False, False, 252, True, False, 181, False, False, 69, False, False, 132, False, False, 143, False, False, 100]
+306|0|0|[100, False, False, 118, False, False, 206, False, False, 52, False, False, 97, True, False, 252, False, False, 51, False, False, 69, False, False, 132, False, False, 75]
+307|0|0|[139, False, False, 100, False, False, 118, False, False, 54, False, False, 52, True, False, 97, False, False, 41, False, False, 51, False, False, 69, False, False, 66]
+308|0|0|[187, False, False, 139, False, False, 100, False, False, 98, False, False, 54, True, False, 52, False, False, 21, False, False, 41, False, False, 51, False, False, 61]
+309|0|0|[88, False, False, 187, False, False, 139, False, False, 51, False, False, 98, True, False, 54, False, False, 32, False, False, 21, False, False, 41, False, False, 56]
+310|0|0|[131, False, False, 88, False, False, 187, False, False, 54, False, False, 51, True, False, 98, False, False, 63, False, False, 32, False, False, 21, False, False, 47]
+311|0|0|[126, False, False, 131, False, False, 88, False, False, 80, False, False, 54, True, False, 51, False, False, 182, False, False, 63, False, False, 32, False, False, 42]
+312|0|0|[229, False, False, 126, False, False, 131, False, False, 109, False, False, 80, True, False, 54, False, False, 438, False, False, 182, False, False, 63, False, False, 37]
+313|0|0|[155, False, False, 229, False, False, 126, False, False, 123, False, False, 109, True, False, 80, False, False, 175, False, False, 438, False, False, 182, False, False, 29]
+314|0|0|[272, False, False, 155, False, False, 229, False, False, 210, False, False, 123, True, False, 109, False, False, 326, False, False, 175, False, False, 438, False, False, 19]
+315|0|0|[190, False, False, 272, False, False, 155, False, False, 175, False, False, 210, True, False, 123, False, False, 307, False, False, 326, False, False, 175, False, False, 7]
+316|0|0|[190, False, False, 272, False, False, 155, False, False, 175, False, False, 157, True, False, 123, False, False, 307, False, False, 326, False, False, 175, False, False, 60]
+317|0|0|[276, False, False, 190, False, False, 272, False, False, 312, False, False, 175, True, False, 157, False, False, 127, False, False, 307, False, False, 326, False, False, 45]
+318|0|3|[97, False, False, 276, False, False, 190, False, False, 68, False, False, 312, True, False, 175, False, False, 96, False, False, 127, False, False, 307, False, False, 28]
+319|0|3|[97, False, False, 276, False, False, 190, False, False, 68, False, False, 234, True, False, 175, False, False, 96, False, False, 127, False, False, 307, False, False, 106]
+320|0|0|[57, False, False, 75, False, False, 110, False, False, 97, False, False, 276, True, False, 190, False, False, 68, False, False, 234, False, False, 175, False, False, 83]
+321|0|3|[37, False, False, 57, False, False, 75, False, False, 47, False, False, 97, True, False, 276, False, False, 78, False, False, 68, False, False, 234, False, False, 56]
+322|0|3|[68, False, False, 165, False, False, 84, False, False, 37, False, False, 57, True, False, 75, False, False, 47, False, False, 97, False, False, 276, False, False, 47]
+323|0|0|[62, False, False, 56, False, False, 53, False, False, 68, False, False, 165, True, False, 84, False, False, 37, False, False, 57, False, False, 75, False, False, 42]
+324|0|0|[250, False, False, 62, False, False, 56, False, False, 105, False, False, 68, True, False, 165, False, False, 133, False, False, 37, False, False, 57, False, False, 26]
+325|0|0|[450, False, False, 250, False, False, 62, False, False, 102, False, False, 105, True, False, 68, False, False, 74, False, False, 133, False, False, 37, False, False, 20]
+326|0|0|[152, False, False, 450, False, False, 250, False, False, 93, False, False, 102, True, False, 105, False, False, 74, False, False, 74, False, False, 133, False, False, 10]
+327|0|0|[45, False, False, 152, False, False, 450, False, False, 275, False, False, 93, True, False, 102, False, False, 200, False, False, 74, False, False, 74, False, False, 0]
+328|0|0|[45, False, False, 152, False, False, 450, False, False, 275, False, False, 69, True, False, 102, False, False, 200, False, False, 74, False, False, 74, False, False, 24]
+329|0|0|[64, False, False, 45, False, False, 152, False, False, 138, False, False, 275, True, False, 69, False, False, 153, False, False, 200, False, False, 74, False, False, 18]
+330|0|0|[64, False, False, 45, False, False, 152, False, False, 138, False, False, 206, True, False, 69, False, False, 153, False, False, 200, False, False, 74, False, False, 87]
+331|0|3|[162, False, False, 64, False, False, 45, False, False, 85, False, False, 138, True, False, 206, False, False, 108, False, False, 153, False, False, 200, False, False, 67]
+332|0|0|[257, False, False, 258, False, False, 82, False, False, 162, False, False, 64, True, False, 45, False, False, 85, False, False, 138, False, False, 206, False, False, 54]
+333|0|0|[101, False, False, 257, False, False, 258, False, False, 134, False, False, 162, True, False, 64, False, False, 109, False, False, 85, False, False, 138, False, False, 48]
+334|0|0|[161, False, False, 101, False, False, 257, False, False, 363, False, False, 134, True, False, 162, False, False, 161, False, False, 109, False, False, 85, False, False, 32]
+335|0|0|[115, False, False, 161, False, False, 101, False, False, 330, False, False, 363, True, False, 134, False, False, 206, False, False, 161, False, False, 109, False, False, 19]
+336|0|0|[115, False, False, 161, False, False, 101, False, False, 330, False, False, 272, True, False, 134, False, False, 206, False, False, 161, False, False, 109, False, False, 110]
+337|0|0|[36, False, False, 115, False, False, 161, False, False, 76, False, False, 330, True, False, 272, False, False, 216, False, False, 206, False, False, 161, False, False, 83]
+338|0|3|[40, False, False, 36, False, False, 115, False, False, 80, False, False, 76, True, False, 330, False, False, 178, False, False, 216, False, False, 206, False, False, 50]
+339|0|3|[14, False, False, 9, False, False, 16, False, False, 40, False, False, 36, True, False, 115, False, False, 80, False, False, 76, False, False, 330, False, False, 43]
+340|0|1|[14, False, False, 9, False, False, 16, False, False, 14, False, False, 9, True, False, 16, False, False, 40, False, False, 36, False, False, 115, False, False, 40]
+341|0|3|[9, False, False, 16, False, False, 31, False, False, 9, False, False, 16, True, False, 31, False, False, 36, False, False, 115, False, False, 161, False, False, 40]
+342|0|0|[36, False, False, 115, False, False, 161, False, False, 9, False, False, 16, True, False, 31, False, False, 9, False, False, 16, False, False, 31, False, False, 39]
+343|0|0|[40, False, False, 36, False, False, 115, False, False, 14, False, False, 9, True, False, 16, False, False, 14, False, False, 9, False, False, 16, False, False, 38]
+344|0|0|[216, False, False, 40, False, False, 36, False, False, 7, False, False, 14, True, False, 9, False, False, 7, False, False, 14, False, False, 9, False, False, 38]
+345|0|0|[44, False, False, 216, False, False, 40, False, False, 86, False, False, 7, True, False, 14, False, False, 86, False, False, 7, False, False, 14, False, False, 37]
+346|0|0|[70, False, False, 44, False, False, 216, False, False, 16, False, False, 86, True, False, 7, False, False, 16, False, False, 86, False, False, 7, False, False, 37]
+347|0|3|[238, False, False, 70, False, False, 44, False, False, 26, False, False, 16, True, False, 86, False, False, 26, False, False, 16, False, False, 86, False, False, 29]
+348|0|0|[126, False, False, 245, False, False, 114, False, False, 238, False, False, 70, True, False, 44, False, False, 26, False, False, 16, False, False, 86, False, False, 28]
+349|0|0|[167, False, False, 126, False, False, 245, False, False, 90, False, False, 238, True, False, 70, False, False, 24, False, False, 26, False, False, 16, False, False, 21]
+350|0|0|[167, False, False, 126, False, False, 245, False, False, 90, False, False, 178, True, False, 70, False, False, 24, False, False, 26, False, False, 16, False, False, 81]
+351|0|0|[138, False, False, 167, False, False, 126, False, False, 117, False, False, 90, True, False, 178, False, False, 173, False, False, 24, False, False, 26, False, False, 64]
+352|0|0|[407, False, False, 138, False, False, 167, False, False, 90, False, False, 117, True, False, 90, False, False, 37, False, False, 173, False, False, 24, False, False, 55]
+353|0|3|[300, False, False, 407, False, False, 138, False, False, 101, False, False, 90, True, False, 117, False, False, 159, False, False, 37, False, False, 173, False, False, 44]
+354|0|0|[160, False, False, 204, False, False, 456, False, False, 300, False, False, 407, True, False, 138, False, False, 101, False, False, 90, False, False, 117, False, False, 35]
+355|0|0|[160, False, False, 204, False, False, 456, False, False, 300, False, False, 305, True, False, 138, False, False, 101, False, False, 90, False, False, 117, False, False, 137]
+356|0|0|[318, False, False, 160, False, False, 204, False, False, 90, False, False, 300, True, False, 305, False, False, 315, False, False, 101, False, False, 90, False, False, 107]
+357|0|0|[195, False, False, 318, False, False, 160, False, False, 181, False, False, 90, True, False, 300, False, False, 168, False, False, 315, False, False, 101, False, False, 77]
+358|0|0|[293, False, False, 195, False, False, 318, False, False, 141, False, False, 181, True, False, 90, False, False, 449, False, False, 168, False, False, 315, False, False, 68]
+359|0|0|[160, False, False, 293, False, False, 195, False, False, 161, False, False, 141, True, False, 181, False, False, 250, False, False, 449, False, False, 168, False, False, 50]
+360|0|0|[250, False, False, 160, False, False, 293, False, False, 207, False, False, 161, True, False, 141, False, False, 169, False, False, 250, False, False, 449, False, False, 36]
+361|0|3|[392, False, False, 250, False, False, 160, False, False, 184, False, False, 207, True, False, 161, False, False, 339, False, False, 169, False, False, 250, False, False, 20]
+362|0|0|[149, False, False, 89, False, False, 141, False, False, 392, False, False, 250, True, False, 160, False, False, 184, False, False, 207, False, False, 161, False, False, 0]
+363|0|0|[149, False, False, 89, False, False, 141, False, False, 392, False, False, 187, True, False, 160, False, False, 184, False, False, 207, False, False, 161, False, False, 63]
+364|0|0|[237, False, False, 149, False, False, 89, False, False, 194, False, False, 392, True, False, 187, False, False, 267, False, False, 184, False, False, 207, False, False, 45]
+365|0|0|[124, False, False, 237, False, False, 149, False, False, 175, False, False, 194, True, False, 392, False, False, 169, False, False, 267, False, False, 184, False, False, 6]
+366|0|0|[124, False, False, 237, False, False, 149, False, False, 175, False, False, 145, True, False, 392, False, False, 169, False, False, 267, False, False, 184, False, False, 55]
+367|0|0|[145, False, False, 124, False, False, 237, False, False, 99, False, False, 175, True, False, 145, False, False, 64, False, False, 169, False, False, 267, False, False, 41]
+368|0|3|[110, False, False, 145, False, False, 124, False, False, 48, False, False, 99, True, False, 175, False, False, 205, False, False, 64, False, False, 169, False, False, 24]
+369|0|0|[190, False, False, 272, False, False, 155, False, False, 110, False, False, 145, True, False, 124, False, False, 48, False, False, 99, False, False, 175, False, False, 15]
+370|0|0|[276, False, False, 190, False, False, 272, False, False, 75, False, False, 110, True, False, 145, False, False, 47, False, False, 48, False, False, 99, False, False, 1]
+371|0|0|[276, False, False, 190, False, False, 272, False, False, 75, False, False, 82, True, False, 145, False, False, 47, False, False, 48, False, False, 99, False, False, 29]
+372|0|0|[97, False, False, 276, False, False, 190, False, False, 57, False, False, 75, True, False, 82, False, False, 123, False, False, 47, False, False, 48, False, False, 21]
+373|0|0|[47, False, False, 97, False, False, 276, False, False, 37, False, False, 57, True, False, 75, False, False, 68, False, False, 123, False, False, 47, False, False, 14]
+374|0|0|[178, False, False, 47, False, False, 97, False, False, 133, False, False, 37, True, False, 57, False, False, 105, False, False, 68, False, False, 123, False, False, 9]
+375|0|0|[216, False, False, 178, False, False, 47, False, False, 74, False, False, 133, True, False, 37, False, False, 102, False, False, 105, False, False, 68, False, False, 6]
+376|0|0|[216, False, False, 178, False, False, 47, False, False, 74, False, False, 99, True, False, 37, False, False, 102, False, False, 105, False, False, 68, False, False, 40]
+377|0|0|[131, False, False, 216, False, False, 178, False, False, 74, False, False, 74, True, False, 99, False, False, 93, False, False, 102, False, False, 105, False, False, 31]
+378|0|0|[73, False, False, 131, False, False, 216, False, False, 150, False, False, 74, True, False, 74, False, False, 275, False, False, 93, False, False, 102, False, False, 24]
+379|0|0|[70, False, False, 73, False, False, 131, False, False, 153, False, False, 150, True, False, 74, False, False, 138, False, False, 275, False, False, 93, False, False, 17]
+380|0|3|[104, False, False, 70, False, False, 73, False, False, 108, False, False, 153, True, False, 150, False, False, 85, False, False, 138, False, False, 275, False, False, 2]
+381|0|3|[104, False, False, 70, False, False, 73, False, False, 108, False, False, 114, True, False, 150, False, False, 85, False, False, 138, False, False, 275, False, False, 41]
+382|0|0|[67, False, False, 193, False, False, 51, False, False, 104, False, False, 70, True, False, 73, False, False, 108, False, False, 114, False, False, 150, False, False, 30]
+383|0|0|[373, False, False, 67, False, False, 193, False, False, 95, False, False, 104, True, False, 70, False, False, 156, False, False, 108, False, False, 114, False, False, 23]
+384|0|0|[682, False, False, 373, False, False, 67, False, False, 236, False, False, 95, True, False, 104, False, False, 120, False, False, 156, False, False, 108, False, False, 13]
+385|0|0|[429, False, False, 682, False, False, 373, False, False, 426, False, False, 236, True, False, 95, False, False, 250, False, False, 120, False, False, 156, False, False, 4]
+386|0|0|[429, False, False, 682, False, False, 373, False, False, 426, False, False, 177, True, False, 95, False, False, 250, False, False, 120, False, False, 156, False, False, 63]
+387|0|0|[399, False, False, 429, False, False, 682, False, False, 335, False, False, 426, True, False, 177, False, False, 760, False, False, 250, False, False, 120, False, False, 46]
+388|0|0|[297, False, False, 399, False, False, 429, False, False, 280, False, False, 335, True, False, 426, False, False, 330, False, False, 760, False, False, 250, False, False, 4]
+389|0|0|[297, False, False, 399, False, False, 429, False, False, 280, False, False, 251, True, False, 426, False, False, 330, False, False, 760, False, False, 250, False, False, 88]
+390|0|3|[163, False, False, 297, False, False, 399, False, False, 216, False, False, 280, True, False, 251, False, False, 282, False, False, 330, False, False, 760, False, False, 63]
+391|0|0|[320, False, False, 374, False, False, 263, False, False, 163, False, False, 297, True, False, 399, False, False, 216, False, False, 280, False, False, 251, False, False, 35]
+392|0|0|[488, False, False, 320, False, False, 374, False, False, 261, False, False, 163, True, False, 297, False, False, 232, False, False, 216, False, False, 280, False, False, 6]
+393|0|0|[488, False, False, 320, False, False, 374, False, False, 261, False, False, 122, True, False, 297, False, False, 232, False, False, 216, False, False, 280, False, False, 47]
+394|0|0|[414, False, False, 488, False, False, 320, False, False, 238, False, False, 261, True, False, 122, False, False, 478, False, False, 232, False, False, 216, False, False, 35]
+395|0|0|[306, False, False, 414, False, False, 488, False, False, 265, False, False, 238, True, False, 261, False, False, 261, False, False, 478, False, False, 232, False, False, 9]
+396|0|0|[306, False, False, 414, False, False, 488, False, False, 265, False, False, 178, True, False, 261, False, False, 261, False, False, 478, False, False, 232, False, False, 69]
+397|0|0|[450, False, False, 306, False, False, 414, False, False, 161, False, False, 265, True, False, 178, False, False, 466, False, False, 261, False, False, 478, False, False, 52]
+398|0|0|[143, False, False, 450, False, False, 306, False, False, 181, False, False, 161, True, False, 265, False, False, 181, False, False, 466, False, False, 261, False, False, 26]
