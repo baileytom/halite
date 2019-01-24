@@ -22,6 +22,7 @@ This script loads in the model and collects training data.
 
 
 model_path = 'model/state'
+data_path = 'data/batch_data'
 
 # Utilities
 def cell_data(cell):
@@ -60,7 +61,6 @@ except:
     torch.save(policy_net.state_dict(), model_path)
     
 # Set up variables
-f = open("data/batch_data", "a")
 last_halite = 0
 last_action = None
 last_state = None
@@ -80,13 +80,15 @@ while True:
         # Record data from last turn
         last_reward = me.halite_amount - last_halite
         if last_action:
-            f.write("{}|{}|{}|{}|\n".format(
-                t,
-                last_reward,
-                last_action,
-                last_state
-            ))
-
+            out_state = np.array2string(np.asarray(last_state)).replace('\n', '')
+            with open(data_path, "a") as f:
+                f.write("{}|{}|{}|{}|\n".format(
+                    t,
+                    last_reward,
+                    last_action,
+                    out_state
+                ))
+                logging.info("wrote")
         # Forward pass NN for this turns action
         vision = get_vision(ship, 1)
         state = torch.FloatTensor(vision)
