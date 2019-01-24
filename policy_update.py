@@ -28,10 +28,12 @@ class PolicyNet(nn.Module):
         # Possible alternate inputs: entire map, x pos, y pos, halite amount
 
         # Single linear transform
-        self.l1 = nn.Linear(28, 81)
-
+        self.l1 = nn.Linear(50, 81)
+        self.l2 = nn.Linear(81, 269)
+        self.l3 = nn.Linear(269, 81)
+        
         # Action out
-        self.action_head = nn.Linear(81, 6)
+        self.action_head = nn.Linear(81, 5)
 
         # Value out
         self.value_head = nn.Linear(81, 1)
@@ -42,12 +44,15 @@ class PolicyNet(nn.Module):
         
     def forward(self, x):
         x = F.relu(self.l1(x))
+        x = F.relu(self.l2(x))
+        x = F.relu(self.l3(x))
+        
         action_scores = self.action_head(x)
         state_values = self.value_head(x)
         return F.softmax(action_scores, dim=-1)
     
 policy_net = PolicyNet()
-optimizer = optim.Adam(policy_net.parameters(), lr=3e-2)
+optimizer = optim.Adam(policy_net.parameters(), lr=3e-3)
 eps = np.finfo(np.float32).eps.item()
 
 # Load state
@@ -59,15 +64,25 @@ SavedAction = namedtuple('SavedAction', ['log_prob', 'value'])
 savedactions = []
 savedrewards = []
 turns = []
+sids = []
 
+# Read data
+raw_data = []
 f = open(data_path, "r")
 for line in f.readlines():
     data = line.strip().split("|")
-    t, reward, sample, state = data
+    raw_data.append(data)
+
+# Sort by ships, turns
+raw_data = sorted(raw_data, key = lambda x: (int(x[1]), int(x[0])))
+    
+for data in raw_data:
+    t, sid, reward, sample, state = data
 
     # Format typing
-    t = int(data[0])
-    reward = float(data[1])
+    sid = int(sid)
+    t = int(t)
+    reward = float(reward)
     sample = torch.tensor(float(sample))
     state = ast.literal_eval(state)
 
@@ -80,6 +95,9 @@ for line in f.readlines():
 
     # Log turn t
     turns.append(t)
+
+    # Log ship id sid
+    sids.append(sid)
     
     # Save reward for turn t
     savedrewards.append(reward)
@@ -97,18 +115,21 @@ R = 0
 policy_losses = []
 value_losses = []
 rewards = []
-gamma = 0.5
+gamma = 0.99
 
 last_t = 600
-for (t, r) in zip(turns[::-1], savedrewards[::-1]):
-    print(t, R)
+last_sid = -69
+for (t, sid, r) in zip(turns[::-1], sids[::-1], savedrewards[::-1]):
     # Check for new episode
-    if t > last_t:
+    if t > last_t or sid != last_sid:
         R = 0
     last_t = t
+    last_sid = sid
     # Running reward
     R = r + gamma * R
     rewards.insert(0, R)
+    print(t, sid, R)
+    #input()
 rewards = torch.tensor(rewards)
 rewards = (rewards - rewards.mean()) / (rewards.std() + eps)
 for (log_prob, value), r in zip(savedactions, rewards):
