@@ -9,6 +9,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.distributions import Categorical
 from torch.autograd import Variable
+import torch.optim as optim
 import matplotlib.pyplot as plt
 import random
 import numpy as np
@@ -45,26 +46,18 @@ class PolicyNet(nn.Module):
         return F.softmax(action_scores, dim=-1)
     
 policy_net = PolicyNet()
-
-SavedAction = namedtuple('SavedAction', ['log_prob', 'value'])
+optimizer = optim.Adam(policy_net.parameters(), lr=3e-2)
+eps = np.finfo(np.float32).eps.item()
 
 # Load state
 policy_net.load_state_dict(torch.load(model_path))
 
-# Read data
-
-rewards = []
-actions = []
-
-gamma = 0.99
-batch_size = 5
-
-saved_actions = []
-policy_losses = []
-value_losses = []
-saved_rewards = []
-
 # Preprocessing
+SavedAction = namedtuple('SavedAction', ['log_prob', 'value'])
+
+actions = []
+rewards = []
+
 f = open("data/batch_data", "r")
 for line in f.readlines():
     data = line.strip().split("|")
@@ -82,18 +75,17 @@ for line in f.readlines():
     probs = policy_net(state)
     m = Categorical(probs)
     log_prob = m.log_prob(sample)
-    print(log_prob)
-    input()
-    
+        
     # Save reward for turn t
-    saved_rewards.append(reward)
+    rewards.append(reward)
 
     # Save action for turn t
     action = SavedAction(log_prob, policy_net.get_state_value(state))
-    saved_actions.append(action)
+    actions.append(action)
     
-    
-    
+# Policy updating
+print(actions)
+print(rewards)
     
 
 
