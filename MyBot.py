@@ -138,7 +138,7 @@ while True:
         last_halite = me.halite_amount
         t += 1
         
-    if len(me.get_ships()) == 0:
+    if len(me.get_ships()) < 2:
         commands.append(me.shipyard.spawn())
         
     game.end_turn(commands) 

@@ -97,12 +97,13 @@ R = 0
 policy_losses = []
 value_losses = []
 rewards = []
-gamma = 0.99
+gamma = 0.5
 
-last_t = -1
-for (t, r) in zip(turns, savedrewards[::-1]):
+last_t = 600
+for (t, r) in zip(turns[::-1], savedrewards[::-1]):
+    print(t, R)
     # Check for new episode
-    if t < last_t:
+    if t > last_t:
         R = 0
     last_t = t
     # Running reward
@@ -121,3 +122,6 @@ optimizer.step()
 
 # Save the updated model
 torch.save(policy_net.state_dict(), model_path)
+
+# Reset batch_data file
+open(data_path, 'w').close()
