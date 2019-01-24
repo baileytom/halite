@@ -20,36 +20,37 @@ model_path = 'model/state'
 class PolicyNet(nn.Module):
     def __init__(self):
         super(PolicyNet, self).__init__()
-        self.fc1 = nn.Linear(27, 81)
-        self.fc2 = nn.Linear(81, 81)
-        self.fc3 = nn.Linear(81, 5)
+        # The input is 1: our sight (5x5 square) 2: our halite amount
+        # Possible alternate inputs: entire map, x pos, y pos, halite amount
+
+        # Single linear transform
+        self.l1 = nn.Linear(28, 81)
+
+        # Action out
+        self.action_head = nn.Linear(81, 6)
+
+        # Value out
+        self.value_head = nn.Linear(81, 1)
 
     def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
-        x = torch.sigmoid(x)
-        return x
-
+        x = F.relu(self.l1(x))
+        action_scores = self.action_head(x)
+        state_values = self.value_head(x)
+        return F.softmax(action_scores, dim=-1), state_values
+    
 policy_net = PolicyNet()
+
+# Load state
 policy_net.load_state_dict(torch.load(model_path))
 
-batch_size = 5
-learning_rate = 0.01
-gamma = 0.99
-optimizer = torch.optim.RMSprop(policy_net.parameters(), lr=learning_rate)
-
-# Load data
-
+# Road data
 f = open("data/batch_data", "r")
 for line in f.readlines():
+    data = line.strip().split("|")
+    t, reward, log_prob, state = data
 
-    print(line)
-
-    input()
+    print(state)
     
-    data = line.split("|")
-    print(data)
-    print(len(data))
-    turn, reward, move, state = data
+    input()
+
 

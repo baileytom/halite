@@ -36,22 +36,51 @@ def get_vision(ship, sight_range):
             sight += cell_data(map[map.normalize(Position(x, y))])
     return sight
 
+def navigate_dir(ship, destination):
+    # Naive navigate for now
+    return game.game_map.naive_navigate(ship, destination)
+
+# Set up policy
 
 class PolicyNet(nn.Module):
     def __init__(self):
         super(PolicyNet, self).__init__()
-        self.fc1 = nn.Linear(27, 81)
-        self.fc2 = nn.Linear(81, 81)
-        self.fc3 = nn.Linear(81, 5)
+        # The input is 1: our sight (5x5 square) 2: our halite amount
+        # Possible alternate inputs: entire map, x pos, y pos, halite amount
+
+        # Single linear transform
+        self.l1 = nn.Linear(28, 81)
+
+        # Action out
+        self.action_head = nn.Linear(81, 6)
+
+        # Value out
+        self.value_head = nn.Linear(81, 1)
 
     def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
-        x = torch.sigmoid(x)
-        return x
+        x = F.relu(self.l1(x))
+        action_scores = self.action_head(x)
+        state_values = self.value_head(x)
+        return F.softmax(action_scores, dim=-1), state_values
 
-# Set up policy
+# Policy utilities
+
+def select_action(state):
+    state = torch.FloatTensor(state)
+    state = Variable(state)
+    probs, state_value = policy_net(state)
+    m = Categorical(probs)
+    action_sample = m.sample()
+    action = [
+            ship.move(Direction.North),
+            ship.move(Direction.South),
+            ship.move(Direction.East),
+            ship.move(Direction.West),
+            ship.move(Direction.Still),
+            ship.move(navigate_dir(ship, shipyard))
+        ][int(action_sample)]
+    return action, m.log_prob(action_sample), state_value
+
 policy_net = PolicyNet()
 
 # Load existing / save new model
@@ -62,7 +91,7 @@ except:
     
 # Set up variables
 last_halite = 0
-last_action = None
+last_action_prob = None
 last_state = None
 t = 0
 
@@ -74,42 +103,36 @@ while True:
     game.update_frame()
     me = game.me
     game_map = game.game_map
+    shipyard = me.shipyard.position
     commands = []
 
     for ship in me.get_ships():
         # Record data from last turn
         last_reward = me.halite_amount - last_halite
-        if last_action:
-            out_state = np.array2string(np.asarray(last_state)).replace('\n', '')
+        if last_state:
+            #out_state = np.array2string(np.asarray(last_state)).replace('\n', ''
             with open(data_path, "a") as f:
-                f.write("{}|{}|{}|{}|\n".format(
+                # For turn t-1
+                #   time, reward, log prob action, state values
+                f.write("{}|{}|{}|{}\n".format(
                     t,
                     last_reward,
-                    last_action,
-                    out_state
+                    last_action_prob,
+                    last_state
                 ))
                 logging.info("wrote")
-        # Forward pass NN for this turns action
+                
+        # Forward pass NN for this turns action, collect data
         vision = get_vision(ship, 1)
-        state = torch.FloatTensor(vision)
-        state = Variable(state)
-        probs = policy_net(state)
-        m = Categorical(probs)
-        sample = int(m.sample())
+        state = vision + [ship.halite_amount]
+        action, action_prob, state_value = select_action(state) 
 
-        # Do action
-        possible_actions = [
-            ship.move(Direction.North),
-            ship.move(Direction.South),
-            ship.move(Direction.East),
-            ship.move(Direction.West),
-            ship.move(Direction.Still)
-        ]
-        action = possible_actions[sample]
+        # Add action to commands
         commands.append(action)
 
-        last_state = state
-        last_action = action
+        # Save data to store with next turn's reward diff
+        last_state = state_value
+        last_action_prob = action_prob
         last_halite = me.halite_amount
         t += 1
         
