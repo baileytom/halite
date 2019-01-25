@@ -6,7 +6,7 @@ do
   for j in $(seq 1 $1)
   do
     echo episode $j  
-    ./halite --replay-directory replays/ -vvv --width 32 --height 32 "python3.6 MyBot.py" "python3.6 MyBot.py"
+    ./halite --replay-directory replays/ -vvv --width 32 --height 32 "python3.6 MyBot.py ${j}" "python3.6 MyBot.py ${j}"
   done
   python3.6 update.py
 done

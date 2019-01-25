@@ -14,12 +14,14 @@ import random
 import numpy as np
 from itertools import count
 from policy_net import PolicyNet
+import sys
 
 """
 
 This script loads in the model and collects training data.
 
 """
+episode = sys.argv[1]
 data_path = 'data/batch_data'
 ship_vision_range = 16
 halite_threshold = 300
@@ -110,6 +112,7 @@ while True:
         last_reward = 0
         if not me.has_ship(sid):
             last_reward = -1 # You died.
+            logging.info("\n\nDEAD SHIP\n\n")
         else:
             last_reward = 1 if last_halite >= halite_threshold else 0
             
@@ -118,7 +121,8 @@ while True:
             
         # Write to file
         with open(data_path, "a") as f:
-            f.write("{}|{}|{}|{}|{}\n".format(
+            f.write("{}|{}|{}|{}|{}|{}\n".format(
+                episode,
                 t,
                 sid,
                 last_reward,

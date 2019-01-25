@@ -41,6 +41,7 @@ savedactions = []
 savedrewards = []
 turns = []
 sids = []
+episodes = []
 
 # Read data
 raw_data = []
@@ -50,13 +51,14 @@ for line in f.readlines():
     raw_data.append(data)
 
 # Sort by ships, turns
-raw_data = sorted(raw_data, key = lambda x: (int(x[1]), int(x[0])))
+raw_data = sorted(raw_data, key = lambda x: (int(x[0]), int(x[2]), int(x[1])))
     
 for data in raw_data:
-    t, sid, reward, sample, state = data
+    episode, t, sid, reward, sample, state = data
 
     # Format typing
     sid = int(sid)
+    episode = int(episode)
     t = int(t)
     reward = float(reward)
     sample = torch.tensor(float(sample)).cuda()
@@ -69,6 +71,9 @@ for data in raw_data:
     m = Categorical(probs)
     log_prob = m.log_prob(sample)
 
+    # Log episode
+    episodes.append(episode)
+    
     # Log turn t
     turns.append(t)
 
@@ -78,6 +83,9 @@ for data in raw_data:
     # Save reward for turn t
     savedrewards.append(reward)
 
+    #print(episode, t)
+    #input()
+    
     # Save action for turn t
     action = SavedAction(log_prob, policy_net.get_state_value(state))
     savedactions.append(action)
@@ -91,11 +99,11 @@ R = 0
 policy_losses = []
 value_losses = []
 rewards = []
-gamma = 0.5
+gamma = 0.7
 
 last_t = 600
 last_sid = -69
-for (t, sid, r) in zip(turns[::-1], sids[::-1], savedrewards[::-1]):
+for (e, t, sid, r) in zip(episodes[::-1], turns[::-1], sids[::-1], savedrewards[::-1]):
     # Check for new episode
     if t > last_t or sid != last_sid:
         R = 0
@@ -103,8 +111,9 @@ for (t, sid, r) in zip(turns[::-1], sids[::-1], savedrewards[::-1]):
     last_sid = sid
     # Running reward
     R = r + gamma * R
+    #print("_______\nEpisode {}\nShip {}\nTurn {} r {}\nR {}.".format(
+        e, sid, t, r, R))
     rewards.insert(0, R)
-    #print(t, sid, R)
     #input()
 rewards = torch.tensor(rewards).cuda()
 rewards = (rewards - rewards.mean()) / (rewards.std() + eps)
