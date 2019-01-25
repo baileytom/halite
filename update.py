@@ -19,9 +19,15 @@ import ast
 
 from policy_net import PolicyNet
 
+input("Here's your change to halt the update")
+
 data_path = 'data/batch_data'
+cuda = torch.device('cuda')
+
+print("Using ", torch.cuda.get_device_name(0))
 
 policy_net = PolicyNet()
+policy_net.cuda()
 optimizer = optim.Adam(policy_net.parameters(), lr=3e-3)
 eps = np.finfo(np.float32).eps.item()
 
@@ -53,11 +59,11 @@ for data in raw_data:
     sid = int(sid)
     t = int(t)
     reward = float(reward)
-    sample = torch.tensor(float(sample))
+    sample = torch.tensor(float(sample)).cuda()
     state = ast.literal_eval(state)
 
     # Calculating
-    state = torch.FloatTensor(state)
+    state = torch.FloatTensor(state).cuda()
     state = Variable(state)
     probs = policy_net(state)
     m = Categorical(probs)
@@ -98,16 +104,16 @@ for (t, sid, r) in zip(turns[::-1], sids[::-1], savedrewards[::-1]):
     # Running reward
     R = r + gamma * R
     rewards.insert(0, R)
-    print(t, sid, R)
+    #print(t, sid, R)
     #input()
-rewards = torch.tensor(rewards)
+rewards = torch.tensor(rewards).cuda()
 rewards = (rewards - rewards.mean()) / (rewards.std() + eps)
 for (log_prob, value), r in zip(savedactions, rewards):
     reward = r - value.item()
     policy_losses.append(-log_prob * reward)
-    value_losses.append(F.smooth_l1_loss(value, torch.tensor([r])))
+    value_losses.append(F.smooth_l1_loss(value, torch.tensor([r]).cuda()))
 optimizer.zero_grad()
-loss = torch.stack(policy_losses).sum() + torch.stack(value_losses).sum()
+loss = torch.stack(policy_losses).sum().cuda() + torch.stack(value_losses).sum().cuda()
 loss = loss/len(turns)
 
 loss.backward()

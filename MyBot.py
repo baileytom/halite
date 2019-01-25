@@ -21,6 +21,8 @@ This script loads in the model and collects training data.
 
 """
 data_path = 'data/batch_data'
+ship_vision_range = 16
+halite_threshold = 300
 
 # Utilities
 def cell_data(cell):
@@ -29,8 +31,8 @@ def cell_data(cell):
 def get_vision(ship, sight_range):    
     map = game.game_map
     sight = []
-    for x in range(ship.position.x-sight_range,ship.position.x+sight_range+1):
-        for y in range(ship.position.y-sight_range,ship.position.y+sight_range+1):
+    for x in range(ship.position.x-sight_range,ship.position.x+sight_range):
+        for y in range(ship.position.y-sight_range,ship.position.y+sight_range):
             sight += cell_data(map[map.normalize(Position(x, y))])
     return sight
 
@@ -38,7 +40,7 @@ def nav_dir(ship, destination):
     return game.game_map.naive_navigate(ship, destination)
 
 def select_action(state):
-    state = torch.FloatTensor(state)
+    state = torch.FloatTensor(state).cuda()
     state = Variable(state)
     probs = policy_net(state)
     m = Categorical(probs)
@@ -53,6 +55,7 @@ def select_action(state):
     return action, action_sample
 
 policy_net = PolicyNet()
+policy_net.cuda()
 
 # Load existing / save new model
 try:
@@ -96,7 +99,7 @@ while True:
         if not me.has_ship(sid):
             last_reward = -1 # You died.
         else:
-            last_reward = 1 if me.get_ship(sid).halite_amount > last_halite else 0
+            last_reward = 1 if last_halite >= halite_threshold else 0
             
         if not last_state or go_home:
             continue
@@ -119,7 +122,7 @@ while True:
         action = None
         action_sample = None
         
-        if ship.is_full:
+        if ship.halite_amount > halite_threshold:
             ship_data[ship.id][3] = True
 
         if ship.position == shipyard:
@@ -129,17 +132,18 @@ while True:
             action = ship.move(nav_dir(ship, shipyard))
         else:
             # Forward pass NN for this turns action, collect data
-            state = get_vision(ship, 2)
+            state = get_vision(ship, ship_vision_range)
             action, action_sample = select_action(state) 
 
         # Add action to commands
+        logging.info(action)
         commands.append(action)
 
         # Collect data
         data = [state, action_sample, ship.position, ship_data[ship.id][3], ship.halite_amount]
         ship_data[ship.id] = data
         
-    if len(me.get_ships()) < 1 and not game_map[me.shipyard.position].is_occupied and me.halite_amount >= 1000:
+    if len(me.get_ships()) < 2 and not game_map[me.shipyard.position].is_occupied and me.halite_amount >= 1000:
         commands.append(me.shipyard.spawn())
 
     game.end_turn(commands) 
