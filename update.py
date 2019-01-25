@@ -82,18 +82,10 @@ for data in raw_data:
     
     # Save reward for turn t
     savedrewards.append(reward)
-
-    #print(episode, t)
-    #input()
     
     # Save action for turn t
     action = SavedAction(log_prob, policy_net.get_state_value(state))
     savedactions.append(action)
-    
-# Policy updating
-#print(turns)
-#print(actions)
-#print(rewards)
 
 R = 0
 policy_losses = []
@@ -111,10 +103,7 @@ for (e, t, sid, r) in zip(episodes[::-1], turns[::-1], sids[::-1], savedrewards[
     last_sid = sid
     # Running reward
     R = r + gamma * R
-    #print("_______\nEpisode {}\nShip {}\nTurn {} r {}\nR {}.".format(
-        e, sid, t, r, R))
     rewards.insert(0, R)
-    #input()
 rewards = torch.tensor(rewards).cuda()
 rewards = (rewards - rewards.mean()) / (rewards.std() + eps)
 for (log_prob, value), r in zip(savedactions, rewards):
