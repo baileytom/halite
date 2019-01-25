@@ -17,46 +17,16 @@ from itertools import count
 from collections import namedtuple
 import ast
 
-model_path = 'model/state'
+from policy_net import PolicyNet
+
 data_path = 'data/batch_data'
 
-# Model
-class PolicyNet(nn.Module):
-    def __init__(self):
-        super(PolicyNet, self).__init__()
-        # The input is 1: our sight (5x5 square) 2: our halite amount
-        # Possible alternate inputs: entire map, x pos, y pos, halite amount
-
-        # Single linear transform
-        self.l1 = nn.Linear(50, 81)
-        self.l2 = nn.Linear(81, 269)
-        self.l3 = nn.Linear(269, 81)
-        
-        # Action out
-        self.action_head = nn.Linear(81, 5)
-
-        # Value out
-        self.value_head = nn.Linear(81, 1)
-
-    def get_state_value(self, x):
-        x = F.relu(self.l1(x))
-        return self.value_head(x)
-        
-    def forward(self, x):
-        x = F.relu(self.l1(x))
-        x = F.relu(self.l2(x))
-        x = F.relu(self.l3(x))
-        
-        action_scores = self.action_head(x)
-        state_values = self.value_head(x)
-        return F.softmax(action_scores, dim=-1)
-    
 policy_net = PolicyNet()
 optimizer = optim.Adam(policy_net.parameters(), lr=3e-3)
 eps = np.finfo(np.float32).eps.item()
 
 # Load state
-policy_net.load_state_dict(torch.load(model_path))
+policy_net.load_state()
 
 # Preprocessing
 SavedAction = namedtuple('SavedAction', ['log_prob', 'value'])
@@ -144,7 +114,7 @@ loss.backward()
 optimizer.step()
 
 # Save the updated model
-torch.save(policy_net.state_dict(), model_path)
+policy_net.save_state()
 
 # Reset batch_data file
 open(data_path, 'w').close()

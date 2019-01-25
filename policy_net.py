@@ -4,6 +4,8 @@ import torch.nn.functional as F
 
 # Define model
 class PolicyNet(nn.Module):
+    model_path = 'model/state'
+    
     def __init__(self):
         super(PolicyNet, self).__init__()
         
@@ -22,11 +24,11 @@ class PolicyNet(nn.Module):
         x = F.relu(self.l1(x))
         return self.value_head(x)
 
-    def load_state(self, path):
-        self.load_state_dict(torch.load(path))
+    def load_state(self):
+        self.load_state_dict(torch.load(PolicyNet.model_path))
 
-    def save_state(self, path):
-        torch.save(self.state_dict(), path)
+    def save_state(self):
+        torch.save(self.state_dict(), PolicyNet.model_path)
         
     def forward(self, x):
         x = F.relu(self.l1(x))

@@ -13,15 +13,13 @@ import matplotlib.pyplot as plt
 import random
 import numpy as np
 from itertools import count
+from policy_net import PolicyNet
 
 """
 
 This script loads in the model and collects training data.
 
 """
-
-
-model_path = 'model/state'
 data_path = 'data/batch_data'
 
 # Utilities
@@ -37,42 +35,7 @@ def get_vision(ship, sight_range):
     return sight
 
 def nav_dir(ship, destination):
-    # Naive navigate for now
     return game.game_map.naive_navigate(ship, destination)
-
-# Set up policy
-
-class PolicyNet(nn.Module):
-    def __init__(self):
-        super(PolicyNet, self).__init__()
-        # The input is 1: our sight (5x5 square) 2: our halite amount
-        # Possible alternate inputs: entire map, x pos, y pos, halite amount
-
-        # Single linear transform
-        self.l1 = nn.Linear(50, 81)
-        self.l2 = nn.Linear(81, 269)
-        self.l3 = nn.Linear(269, 81)
-        
-        # Action out
-        self.action_head = nn.Linear(81, 5)
-
-        # Value out
-        self.value_head = nn.Linear(81, 1)
-
-    def get_state_value(self, x):
-        x = F.relu(self.l1(x))
-        return self.value_head(x)
-        
-    def forward(self, x):
-        x = F.relu(self.l1(x))
-        x = F.relu(self.l2(x))
-        x = F.relu(self.l3(x))
-        
-        action_scores = self.action_head(x)
-        state_values = self.value_head(x)
-        return F.softmax(action_scores, dim=-1)
-
-# Policy utilities
 
 def select_action(state):
     state = torch.FloatTensor(state)
@@ -87,18 +50,15 @@ def select_action(state):
             ship.move(Direction.West),
             ship.move(Direction.Still)
         ][int(action_sample)]
-
-    logging.info(m.log_prob(action_sample))
-    
     return action, action_sample
 
 policy_net = PolicyNet()
 
 # Load existing / save new model
 try:
-    policy_net.load_state_dict(torch.load(model_path))
+    policy_net.load_state()
 except:
-    torch.save(policy_net.state_dict(), model_path)
+    policy_net.save_state()
     
 # Set up variables
 ship_data = {}
@@ -106,9 +66,6 @@ last_halite = 0
 last_action_sample = None
 last_state = None
 t = 0
-
-# If ship position = shipyard && ship.halite_amount = 0
-#    reward = ship.last_halite amount - ship.halite amount
 
 # Game loop
 game = hlt.Game()
@@ -135,10 +92,9 @@ while True:
         last_state, last_action_sample, last_position, go_home, last_halite = values
         
         # Calculate reward
-        last_reward = -1
+        last_reward = 0
         if not me.has_ship(sid):
-            pass
-            #last_reward = -1 # You died.
+            last_reward = -1 # You died.
         else:
             last_reward = 1 if me.get_ship(sid).halite_amount > last_halite else 0
             
@@ -162,7 +118,6 @@ while True:
         state = None
         action = None
         action_sample = None
-        go_home = ship_data[ship.id][3]
         
         if ship.is_full:
             ship_data[ship.id][3] = True
@@ -170,7 +125,6 @@ while True:
         if ship.position == shipyard:
             ship_data[ship.id][3] = False
         
-        # Check for go home flag
         if ship_data[ship.id][3]:
             action = ship.move(nav_dir(ship, shipyard))
         else:
@@ -182,7 +136,7 @@ while True:
         commands.append(action)
 
         # Collect data
-        data = [state, action_sample, ship.position, go_home, ship.halite_amount]
+        data = [state, action_sample, ship.position, ship_data[ship.id][3], ship.halite_amount]
         ship_data[ship.id] = data
         
     if len(me.get_ships()) < 1 and not game_map[me.shipyard.position].is_occupied and me.halite_amount >= 1000:
