@@ -26,33 +26,42 @@ halite_threshold = 300
 
 # Utilities
 def cell_data(cell):
-    return [cell.halite_amount, cell.is_occupied]
+    return [cell.halite_amount]
 
 def get_vision(ship, sight_range):    
-    map = game.game_map
+    game_map = game.game_map
     sight = []
     for x in range(ship.position.x-sight_range,ship.position.x+sight_range):
         for y in range(ship.position.y-sight_range,ship.position.y+sight_range):
-            sight += cell_data(map[map.normalize(Position(x, y))])
+            sight += cell_data(game_map[game_map.normalize(Position(x, y))])
     return sight
 
 def nav_dir(ship, destination):
     return game.game_map.naive_navigate(ship, destination)
 
-def select_action(state):
+def select_direction(state):
     state = torch.FloatTensor(state).cuda()
     state = Variable(state)
     probs = policy_net(state)
     m = Categorical(probs)
     action_sample = m.sample()
-    action = [
-            ship.move(Direction.North),
-            ship.move(Direction.South),
-            ship.move(Direction.East),
-            ship.move(Direction.West),
-            ship.move(Direction.Still)
+    direction = [
+            Direction.North,
+            Direction.South,
+            Direction.East,
+            Direction.West,
+            Direction.Still
         ][int(action_sample)]
-    return action, action_sample
+    return direction, action_sample
+
+def norm(game_map, position):
+    return game_map.normalize(position)
+
+def is_safe(position):
+    position = norm(game_map, position)
+    if position in unsafe_positions:
+        return False
+    return True
 
 policy_net = PolicyNet()
 policy_net.cuda()
@@ -68,6 +77,7 @@ ship_data = {}
 last_halite = 0
 last_action_sample = None
 last_state = None
+unsafe_positions = []
 t = 0
 
 # Game loop
@@ -81,6 +91,8 @@ while True:
     game_map = game.game_map
     shipyard = me.shipyard.position
     commands = []
+
+    unsafe_positions = [norm(game_map, ship.position) for ship in me.get_ships()]
 
     for ship in me.get_ships():
         if ship.id in ship_data:
@@ -119,7 +131,7 @@ while True:
             
     for ship in me.get_ships():
         state = None
-        action = None
+        direction = None
         action_sample = None
         
         if ship.halite_amount > halite_threshold:
@@ -129,21 +141,31 @@ while True:
             ship_data[ship.id][3] = False
         
         if ship_data[ship.id][3]:
-            action = ship.move(nav_dir(ship, shipyard))
+            direction = nav_dir(ship, shipyard)
         else:
             # Forward pass NN for this turns action, collect data
             state = get_vision(ship, ship_vision_range)
-            action, action_sample = select_action(state) 
+            direction, action_sample = select_direction(state)
+
+        # Prevent collisions
+        next_pos = ship.position.directional_offset(direction)
+        if not is_safe(next_pos):
+            direction = Direction.Still
+        elif direction != Direction.Still:
+            pass
+            #unsafe_positions.remove(ship.position)
+        unsafe_positions.append(next_pos)
 
         # Add action to commands
-        logging.info(action)
+        action = ship.move(direction)
+        logging.info("ship: {}\nposition: {} -> {}\naction: {}\n, unsafes: {}\n".format(ship.id, ship.position, next_pos, action, unsafe_positions))
         commands.append(action)
 
         # Collect data
         data = [state, action_sample, ship.position, ship_data[ship.id][3], ship.halite_amount]
         ship_data[ship.id] = data
         
-    if len(me.get_ships()) < 2 and not game_map[me.shipyard.position].is_occupied and me.halite_amount >= 1000:
+    if len(me.get_ships()) < 5 and not game_map[me.shipyard.position].is_occupied and me.halite_amount >= 1000 and shipyard not in unsafe_positions:
         commands.append(me.shipyard.spawn())
 
     game.end_turn(commands) 

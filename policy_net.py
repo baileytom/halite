@@ -11,9 +11,9 @@ class PolicyNet(nn.Module):
         super(PolicyNet, self).__init__()
         
         # We need more layers
-        self.l1 = nn.Linear(2048, 2048)
-        self.l2 = nn.Linear(2048, 2048)
-        self.l3 = nn.Linear(2048, 512)
+        self.l1 = nn.Linear(1024, 1024)
+        self.l2 = nn.Linear(1024, 1024)
+        self.l3 = nn.Linear(1024, 512)
         self.l4 = nn.Linear(512, 256)
         self.l5 = nn.Linear(256, 128)
         self.l6 = nn.Linear(128, 64)
