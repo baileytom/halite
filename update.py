@@ -19,7 +19,7 @@ import ast
 
 from policy_net import PolicyNet
 
-input("Here's your change to halt the update")
+#input("Here's your chance to halt the update")
 
 data_path = 'data/batch_data'
 cuda = torch.device('cuda')

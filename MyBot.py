@@ -24,7 +24,8 @@ This script loads in the model and collects training data.
 episode = sys.argv[1]
 data_path = 'data/batch_data'
 ship_vision_range = 16
-halite_threshold = 300
+halite_threshold = 500
+rscale = 10
 
 # Utilities
 def cell_data(cell):
@@ -110,11 +111,11 @@ while True:
         
         # Calculate reward
         last_reward = 0
-        if not me.has_ship(sid):
-            last_reward = -1 # You died.
+        if not me.has_ship(sid): # Dead robot
+            last_reward = 0 # Punishing robots to death lead to them giving up
             logging.info("\n\nDEAD SHIP\n\n")
         else:
-            last_reward = 1 if last_halite >= halite_threshold else 0
+            last_reward = 1*rscale if last_halite >= halite_threshold else 0
             
         if not last_state or go_home:
             continue
