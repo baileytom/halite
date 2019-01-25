@@ -115,7 +115,7 @@ R = 0
 policy_losses = []
 value_losses = []
 rewards = []
-gamma = 0.99
+gamma = 0.5
 
 last_t = 600
 last_sid = -69
@@ -138,6 +138,8 @@ for (log_prob, value), r in zip(savedactions, rewards):
     value_losses.append(F.smooth_l1_loss(value, torch.tensor([r])))
 optimizer.zero_grad()
 loss = torch.stack(policy_losses).sum() + torch.stack(value_losses).sum()
+loss = loss/len(turns)
+
 loss.backward()
 optimizer.step()
 

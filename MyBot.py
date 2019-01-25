@@ -135,11 +135,12 @@ while True:
         last_state, last_action_sample, last_position, go_home, last_halite = values
         
         # Calculate reward
-        last_reward = 0
+        last_reward = -1
         if not me.has_ship(sid):
-            last_reward = -100 # You died.
+            pass
+            #last_reward = -1 # You died.
         else:
-            last_reward = (me.get_ship(sid).halite_amount - last_halite)/10
+            last_reward = 1 if me.get_ship(sid).halite_amount > last_halite else 0
             
         if not last_state or go_home:
             continue
@@ -171,7 +172,7 @@ while True:
         
         # Check for go home flag
         if ship_data[ship.id][3]:
-            action = nav_dir(ship, shipyard)
+            action = ship.move(nav_dir(ship, shipyard))
         else:
             # Forward pass NN for this turns action, collect data
             state = get_vision(ship, 2)
