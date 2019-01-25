@@ -9,3 +9,7 @@ __pycache__/
 *.class
 *.ipr
 *.iws
+model
+data
+replays
+saved_models
