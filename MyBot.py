@@ -22,6 +22,7 @@ This script loads in the model and collects training data.
 
 """
 episode = sys.argv[1]
+no_update = sys.argv[2].startswith("n")
 data_path = 'data/batch_data'
 ship_vision_range = 16
 halite_threshold = 500
@@ -72,6 +73,7 @@ policy_net.cuda()
 # Load existing / save new model
 try:
     policy_net.load_state()
+    logging.info("loaded state")
 except:
     policy_net.save_state()
     
@@ -121,15 +123,16 @@ while True:
             continue
             
         # Write to file
-        with open(data_path, "a") as f:
-            f.write("{}|{}|{}|{}|{}|{}\n".format(
-                episode,
-                t,
-                sid,
-                last_reward,
-                last_action_sample,
-                last_state
-            ))
+        if not no_update:
+            with open(data_path, "a") as f:
+                f.write("{}|{}|{}|{}|{}|{}\n".format(
+                    episode,
+                    t,
+                    sid,
+                    last_reward,
+                    last_action_sample,
+                    last_state
+                ))
 
         if not me.has_ship(sid):
             ship_data[sid] = None

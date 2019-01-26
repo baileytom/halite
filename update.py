@@ -16,10 +16,14 @@ import numpy as np
 from itertools import count
 from collections import namedtuple
 import ast
+import sys
 
 from policy_net import PolicyNet
 
-#input("Here's your chance to halt the update")
+no_update = sys.argv[1].startswith("n")
+if no_update:
+    print("Not updating parameters.")
+    exit(1)
 
 data_path = 'data/batch_data'
 cuda = torch.device('cuda')
@@ -91,7 +95,7 @@ R = 0
 policy_losses = []
 value_losses = []
 rewards = []
-gamma = 0.7
+gamma = 0.5
 
 last_t = 600
 last_sid = -69
